@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xsi:noNamespaceSchemaLocation="biblioteca1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<libro codigo="114">
+<titulo>Pequeña Historia de España</titulo>
+<autor>Manuel Fernández Álvarez</autor>
+<año>2008</año>
+<editorial>Espasa</editorial>
+</libro>
+<libro codigo="345">
+<titulo>El loco cuento de todos los cuentos</titulo>
+<autor>Jose María Plaza</autor>
+<año>2013</año>
+<editorial>Santillana</editorial>
+</libro>
+</biblioteca>

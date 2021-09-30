@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>	CLUB DE LECTURA</title>
+	</head>
+	<body>
+		<!--Header con el tiúlo y una foto-->
+		<header>
+			<h1>Club de lectura de fantasía y ciencia ficción</h1>
+			<img src="imagenes/libros.jpg" height="300" alt="Estantería de libros"/>
+		</header>
+		<!--El main estará compuesto de un header(para el título), una pequeña introducción y dos artículos-->
+		<main>
+			<!--Cabecera del main con el título-->
+			<header>
+				<h2>Nuestro club</h2>
+			</header>
+				<p>¡Bienvenido/a!</p>
+				<p>Si nos has encontrado es porque estas buscando alguien con quien comentar y analizar hasta el detalle y la extenuación los libros de fantasía y ciencia ficción que tanto te gustan. A nosotros
+				también nos encanta. Por eso, hemos fundado este club donde planeanmos reuirnos para tal fin.</p>
+				<p>Este es nuestro primer año y hemos decidido no arriesgar. A continuación puedes ver los horarios y libros que proponemos para este año.</p>
+			<!--Artículo con header, contenido principal(la tabla) y un aside-->
+			<article>
+				<header>
+					<h3>¿Cuándo nos reunimos?</h3>
+				</header>
+				<p>Queremos reunir al mayor número de gente posible, por eso nuestros horarios estén diseñados de forma que no se solapen. Empezaremos la primera semana de enero y terminaremos la última de diciembre.</p>
+				<!--Tabla agrupada en filas. Se le ha dado un grosor de borde de 2, una separación de celdas de 1, un espacio interior de la celda de 3 y que ocupe un 80% de la ventana del navegador-->
+				<table  border="2" cellspacing="1" cellspading="3" width="80%" >
+					<caption>HORARIO CLUB DE LECTURA</caption>
+						<thead>
+							<tr>
+								<th>Hora</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+							</tr>
+						</thead>
+						</tbody>
+							<tr>
+								<th>16:00-18:00</th>
+								<td></td>
+								<td>El señor de los anillos</td>
+								<td></td>
+								<td>El señor de los anillos</td>
+								<td></td>
+							</tr>
+							<tr>
+								<th>18:00-20:00</th>
+								<td>Canción de hielo y fuego</td>
+								<td></td>
+								<td>Canción de hielo y fuego</td>
+								<td></td>
+								<td>Canción de hielo y fuego</td>
+							</tr>
+							<tr>
+								<th>20:00-22:00</th>
+								<td></td>
+								<td>El hombre en el castillo</td>
+								<td></td>
+								<td>¿Sueñan los androides con obejas eléctricas?</td>
+							<td></td>
+							</tr>
+						</tbody>
+				</table>
+				<!--Uso el aside dentro del artículo para aportar una pequeña aclaración sobre la tabla(que es su contenido principal)-->
+				<aside>
+					<p>Sabemos que las extensión de las sagas no tienen nada que ver con la de los libros independientes, por ello todos los libros que se comenten en el horario de 20:00-22:00 se renovarán cada mes.</p>
+				</aside>
+			</article>
+			<!--Artículo con header y contenido principal(algo de texto y la tabla)-->
+			<article>
+				<!--Empleo el header para poner el título-->
+				<header>
+					<h3>Los libros</h3>
+				</header>
+				<p>Cada uno puede conseguir el libro como le apetezca: comprarlo por su cuenta, cogerlo perstado en una biblioteca, usar una edición que ya tenga, etc. Siempre se pondrán objetivos por capítulos, por lo que la edición que lea cada uno no es importante. No obstante nosotros ponemos a disposición de quien quiera nuestra tienda donde encontrar los títulos a buen precio. Además, si los compras antes de enero, tenemos ofertas especiales.</p>
+				<!--Tabla agupada por columnas. Ocupará el 100% de la ventana del navegador-->
+				<table width="100%">
+					<caption>Libros</caption>
+						<!--Agrupo las columnas en dos grupos. Uno con los datos y otro con los precios. Para diferenciarlos uso un atributo de estilo asignándole un color a cada grupo-->
+						<colgroup>
+							<col span="3" style="background-color: lightgreen"/>
+							<col span="2" style="background-color: lightblue"/>
+						</colgroup>
+						<thead>
+							<tr>
+								<!--En la primera columna combino dos filas para 'Autor'-->
+								<th rowspan="2">Autor</th>
+								<!--También ya combino dos columnas para 'Obra' y dos para 'Precios'.-->
+								<th colspan="2">Obra</th>
+								<th colspan="2">Precios</th>					
+							</tr>
+							<tr>
+								<th>Saga</th>
+								<th>Libro</th>
+								<th>PVP</th>
+								<th>Ofertas</th>
+							</tr>
+						</thead>
+						</tbody>
+							<!--La estructura empleada a continuación se repetirá varias veces a lo lago del tbody-->
+							<tr>
+								<!--Combino las tres siguientes filas de la primera columna para Tolkien-->
+								<td rowspan="3">J.R.R. Tolkien</td>
+								<!--Combino las tres siguientes filas de la segunda columna para El señor de los anillos-->
+								<th rowspan="3">El señor de los anillos</th>
+								<td ><strong><p>La comunidad del anillo</strong></p>
+									<!--Lista no ordenada(con lista de definición aanidada) dentro de una celda-->
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>En la adormecida e idílica Comarca, un joven hobbit recibe un encargo: custodiar el Anillo Único y emprender el viaje para su destrucción en las Grietas del Destino.
+								 				Consciente de la importancia de su misión, Frodo abandona la Comarca e inicia el camino hacia Mordor con la compañía de inesperada de Sam, Pippin y Merry.  Pero sólo con la
+								 				ayuda de Aragorn conseguirán vencer a los Jinetes Negros y alcanzar el refugio de la Casa de Elrond en Rivendel.</dd>
+											</dl>
+										</li>
+										<li>
+											<!--Enlace externo remoto a la wikipedia para conocer más acerca del libro-->
+											Enlace: <a href="https://es.wikipedia.org/wiki/La_Comunidad_del_Anillo">La cominidad del anillo. Wikipedia</a>
+										</li>
+									</ul>
+									<!--Tabla anidada dentro de la tabla-->
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<!--Imagen dentro de una de las celdas de la tabla anidada-->
+												<th><img src="imagenes/comunidad.jpg" height="100"/></th>
+												<th>Minotauro</th>
+												<th>560</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td >16,99 €</td>
+								<td>12,99 €</td>
+							</tr>
+							<tr>
+								<td><p><strong>Las dos torres</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>La Compañía se ha disuelto y sus integrantes emprenden caminos separados. Frodo y Sam continúan solos su viaje a lo largo del río Anduin, perseguidos por la sombra
+												misteriosa de un ser extraño que también ambiciona la posesión del Anillo. Mientras, hombres, elfos y enanos se preparan para la batalla final contra las fuerzas
+												del Señor del Mal.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/Las_dos_torres">Las dos torres. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/torres.jpg" height="100"/></th>
+												<th>Minotauro</th>
+												<th>462</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>14,99 €</td>
+								<td>10,99 €</td>
+							</tr>
+							<tr>
+								<td><p><strong>El retorno del rey</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>Los ejércitos del Señor Oscuro van extendiendo cada vez más su maléfica sombra por la Tierra Media. Hombres, elfos y enanos unen sus fuerzas para presentar batalla
+												 a Sauron y sus huestes. Ajenos a estos preparativos, Frodo y Sam siguen adentrándose en el país de Mordor en su heroico viaje para destruir el Anillo de Poder en las Grietas del Destino.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/El_retorno_del_Rey">El retorno del rey. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/rey.jpg" height="100"/></th>
+												<th>Minotauro</th>
+												<th>414</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>14,99 €</td>
+								<td>10,99 €</td>
+							</tr>
+							<tr>
+								<td rowspan="5">George R.R. Martin</td>
+								<th rowspan="5">Canción de hielo y fuego</th>
+								<td><p><strong>Juego de tronos</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>Tras el largo verano, el invierno se acerca a los Siete Reinos. Lord Eddars Stark, señor de Invernalia, deja sus dominios para unirse a la corte del rey
+												 Robert Baratheon el Usurpador, hombre díscolo y otrora guerrero audaz cuyas mayores aficiones son comer, beber y engendrar bastardos. Eddard Stark desempeñará el cargo
+												 de Mano del Rey e intentará desentrañar una maraña de intrigas que pondrá en peligro su vida... y la de los suyos. En un mundo cuyas estaciones duran décadas y en el
+												que retazos de una magia inmemorial y olvidada surgen en los rincones más sombrios y maravillosos, la traición y la lealtad, la compasión y la sed de venganza, el amor
+												y el poder hacen del juego de tronos una poderosa trampa que atrapa en sus fauces a los personajes... y al lector.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/Juego_de_tronos">Juego de tronos. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/juego.jpg" height="100"/></th>
+												<th>Gigamesh</th>
+												<th>790</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>16,99 €</td>
+								<td>15,99 €</td>
+							</tr>
+							<tr>
+								<td><p><strong>Choque de reyes</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>Un cometa del color de la sangre hiende el cielo, cargado de malos augurios. Y hay razones sobradas para pensar así: los Siete Reinos se ven sacudidos por las
+													luchas intestinas entre los nobles por la sucesión al Trono de Hierro. En la otra orilla del mar Angosto, la princesa Daenerys Targaryen conduce a su pueblo de jinetes
+													salvajes a través del desierto. Y en los páramos helados del norte, más allá del Muro, un ejército implacable avanza hacia un territorio asolado por el caos y las guerras fratricidas.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/Choque_de_reyes">Choque de reyes. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/choque.jpg" height="100"/></th>
+												<th>Gigamesh</th>
+												<th>915</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>18,99 €</td>
+								<td>16,99 €</td>
+							</tr>
+							<tr>
+								<td><p><strong>Tormenta de espadas</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>Las huestes de los fugaces reyes de Poniente, descompuestas en hordas, asuelan y esquilman una tierra castigada por la guerra e indefensa ante un invierno
+												que se anuncia inusitadamente crudo. Las alianzas nacen y se desvanecen como volutas de humo bajo el viento helado del Norte. Ajena a las intrigas palaciegas, 
+												e ignorante del auténtico peligro en ciernes, la Guardia de la Noche se ve desbordada por los salvajes. Y al otro lado del mundo, Daenerys Targaryen intenta 
+												reclutar en las Ciudades Libres un ejército con el que desembarcar en su tierra.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/Tormenta_de_espadas">Tormenta de espadas. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/tormenta.jpg" height="100"/></th>
+												<th>Gigamesh</th>
+												<th>1158</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>19,99 €</td>
+								<td>17,99 €</td>
+							</tr>
+							<tr>
+								<td><p><strong>Festín de cuervos</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>Mientras los vientos del otoño desnudan los árboles, las últimas cosechas se pudren en los pocos campos que no han sido devastados por la guerra, y por los
+												ríos teñidos de rojo bajan cadáveres de todos los blasones y estirpes. Y aunque casi todo Poniente yace extenuado, en diversos rincones florecen nuevas e 
+												inquietantes intrigas que ansían nutrirse de los despojos de un reino moribundo.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/Fest%C3%ADn_de_cuervos">Festín de cuervos. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/festin.jpg" height="100"/></th>
+												<th>Gigamesh</th>
+												<th>863</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>20,99 €</td>
+								<td>18,99 €</td>
+							</tr>
+							<tr>
+								<td><p><strong>Danza de dragones</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>Daenerys Targaryen intenta mitigar el rastro de sangre y fuego que dejó en las Ciudades Libres al erradicar la esclavitud en Meereen. Mientras, un enano parricida,
+												un príncipe de incógnito, un capitán implacable y un enigmático caballero acuden a la llamada de los dragones desde el otro lado del mar Angosto, ajenos al peligro que
+												se cierne sobre el Norte, y que solo las menguadas huestes de uno de los reyes en discordia y la Guardia de la Noche se aprestan a afrontar.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/Danza_de_dragones">Danza de dragones. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/danza.jpg" height="100"/></th>
+												<th>Gigamesh</th>
+												<th>1145</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>23,99 €</td>
+								<td>21,99 €</td>
+							</tr>
+							<tr>
+								<td rowspan="2">Philip K. Dick</td>
+								<td colspan="2"><p><strong>¿Sueñan los androides con ovejas eléctricas?</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>DEn un mundo devastado, lleno de restos tecnológicos y bloques de apartamento vacíos, Rick Deckard es un cazador mercenario cuya tarea consiste en retirar de
+												la circulación a los androides rebeldes, profesión que es causa también de no pocos problemas con su esposa. Sin embargo, los nuevos Nexus-6 son androides con
+												características especiales, casi humanos, lo que dificulta notablemente su labor y puede llevarle a enfrentarse a problemas que es incapaz de imaginar siquiera.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/%C2%BFSue%C3%B1an_los_androides_con_ovejas_el%C3%A9ctricas%3F">¿Sueñan los androides con ovejas eléctricas. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/androides.jpg" height="100"/></th>
+												<th>Minotauro</th>
+												<th>272</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>10,99 €</td>
+								<td>8,99 €</td>
+							</tr>
+							<tr>
+								<td colspan="2"><p><strong>El hombre en el castillo</strong></p>
+									<ul>
+										<li>
+											<dl>
+												<dt>Sinopsis:</dt>
+												<dd>El Hombre en el Castillo nos sumerge en un mundo alternativo en el cual el Eje ha derrotado a los Aliados en la segunda guerra mundial y los Estados Unidos
+													han sido invadidos y divididos entre los vencedores. Mientras los nazis se han anexionado la costa atlántica, donde han instaurado un régimen de terror, la costa
+													pacífica permanece en manos japonesas. En esta América invadida, los nativos son ciudadanos de segunda clase a pesar de que su cultura es admirada por los 
+													vencedores, hasta el punto de que uno de los mejores negocios es la venta de auténticas antigüedades americanas, como relojes de Mickey Mouse o chapas de Coca-Cola.</dd>
+											</dl>
+										</li>
+										<li>
+											Enlace: <a href="https://es.wikipedia.org/wiki/El_hombre_en_el_castillo">El hombre en el castillo. Wikipedia</a>
+										</li>
+									</ul>
+									<table rules="all" border="3">
+										<thead>
+											<tr>
+												<th>Imagen</th>
+												<th>Edición</th>
+												<th>Nº páginas</th>					
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th><img src="imagenes/castillo.jpg" height="100"/></th>
+												<th>Minotauro</th>
+												<th>264</th>					
+											</tr>
+										</tbody>
+									</table>
+								</td>
+								<td>10,99 €</td>
+								<td>8,99 €</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="3">Total</th>
+								<th>169,90 €</th>
+								<th>144,90 €</th>
+							</tr>
+						</tfoot>
+						</table>
+			</article>
+		</main>
+		<!--Footer con mensaje de despedida de la web y de bienvenida al club-->
+		<footer>
+			<p>¡Te esperamos en el club!</p>
+		</footer>
+	</body>
+</html>

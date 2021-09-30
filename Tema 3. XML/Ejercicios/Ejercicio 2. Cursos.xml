@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<cursos>
+	<curso titulo="Lenguaje de marcas">
+		<contenido titulo="HTML">
+			<tema titulo="Etiquetas semánticas">Apuntes sobre etiquetas semánticas</tema>
+			<tema titulo="Etiquetas estructurales">Apuntes sobre etiquetas</tema>
+		</contenido>
+		<contenido titulo="CSS">
+			<tema titulo="Modelo de cajas"></tema>
+			<tema titulo="Etiquetas"></tema>
+		</contenido>
+		<contenido titulo="XML">
+			<tema titulo="Introducción"></tema>
+			<tema titulo="Etiquetas"></tema>
+		</contenido>
+	</curso>
+</cursos>

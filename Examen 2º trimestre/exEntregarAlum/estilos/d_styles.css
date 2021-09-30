@@ -1,0 +1,97 @@
+/*---regla para toda la pag web: definir anchura máxima a 1024px y anchura a 900px. Centrarla horizontalmente (sin margen sup ni inf, y los d izq y dcha q 
+los calcule el navegador). Tamaño de texto definido en % con 62.5. La imagen d fondo es bg_page.png, ubicada en la carpeta correspondiente --*/
+body{
+	max-width:1024px;
+	min-width:900px;
+	font-size: 62.5%;
+	background-image:url("../images/bg_page.png");
+	background-repeat:repeat;
+	margin: auto;
+}
+/*---regla para el contenedor ppal: márgenes con 15px y bordes -color #999, anchura d 1px y discontinuo-  --*/
+.wrapper{
+	margin:15px;
+	border:1px dotted #999;
+}
+
+/*---regla para los títulos principales -h1-: fuente Verdana, tamaño 2.4em, bordes sup e inf definidos igual q el contenedor ppal, con relleno -menos a la dcha-, 
+color d texto #14556b y color d fondo #e6f3ff, alineación a la izq. Asegurarse d q no aparezca ningún otro elemento a sus lados  --*/
+h1{
+	font-family: "Verdana";
+	font-size: 2.4em;
+	border-top:1px dotted #999;
+	border-bottom:1px dotted #999;
+	padding-top:2px;
+	padding-left:2px ;
+	padding-bottom:2px ;
+	color:#14556b;
+	background-color:#e6f3ff;
+	text-align: left;
+	clear:both;
+}
+
+/*---regla para los párrafos: tamaño de 1.6 con respecto a un interlineado d 160%, tipo d letra Georgia, si no "Times New Roman", si no Times y si no cualquiera
+de la familia serif; margen d 10px a todos los lados, y alineación completa --*/
+p{
+	font-family: Georgia,"Times New Roman", Times, serif;
+	line-height: 160%;
+	font-size:1.6em;
+	margin:10px;
+	text-align:justify;
+}
+
+/*---regla para el footer a nivel de página (tiene clase): sin margen izq, fuente Verdana, si no Arial, si no Helvetica y si no sans-serif, tamaño d 1.2em, 
+convertir texto a mayúculas, color #666666, revisar bordes por si hay q eliminar alguno, y asegurarse d q no va a tener ningún otro elemento a ninguno d sus lados --*/
+footer.copyright{
+	margin-left:0;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size:1.2em;
+	text-transform:uppercase;
+	color:#666666;
+	clear:both;
+	text-align: left;
+	border-top:1px dotted #999;
+	}
+
+/*---regla para la imagen y el título q la acompaña (elegir la etiq adecuada q incluye ambos elementos): posicionarla a la derecha, definir anchura (un poco mayor q la d la imagen) y establecer los márgenes --*/
+figure{
+	float:right;
+	margin:10px;
+
+}
+
+/*---regla para las imágenes q están dentro del figure: redimensionar a 200x200px, borde con color #666, relleno, color fondo #CCC --*/
+figure img{
+	width:200px;
+	height:200px;
+	border-color:#666;
+	padding: 10px;
+	background-color:#CCC;
+}
+
+/*---regla para el título d las imágenes: fuente Verdana, si no Arial, si no Helvetica y si no sans-serif, en negrita, tamaño de 1em e interlineado normal,
+relleno, alineación, color #333, borde discontínuo d 1px y color #666; como color fondo #e6f3ff --*/
+figure figcaption{
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-weight:bold;
+	font-size: 1em;
+	line-height:normal;
+	text-align:center;
+}
+
+/*regla para el enlace q permite regresar a la página principal: darle apariencia d botón (igual q la d la pag ppal), tb al acercarse con el puntero del ratón --*/
+.boton{
+	display:inline-block;
+	margin:2px;
+	padding:10px;
+	text-transform:uppercase;
+	background-color:orange;
+	border-radius:20px;
+	color:white;
+	text-decoration: none;
+}
+.boton:hover{
+	color:green;
+	background-color:white;
+}
+

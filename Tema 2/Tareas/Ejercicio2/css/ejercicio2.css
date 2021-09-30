@@ -1,0 +1,4 @@
+h2 {color:blue;}
+p a {color:green;}
+p * a {color:red;}
+/*Me salen los enlaces en verde. No enteiiendo porqué espera que salgan en azul.*/

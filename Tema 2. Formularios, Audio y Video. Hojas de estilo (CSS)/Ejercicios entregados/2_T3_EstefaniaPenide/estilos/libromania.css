@@ -1,0 +1,171 @@
+body{
+	background-image:url("../imagen/beige.jpg");
+	background-repeat:repeat;
+	padding:0;
+	margin:0;
+}
+#wrapper1{
+	width:1100px;
+	margin:0 auto;
+	padding:0;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.cabecera{
+	width:100%;
+	margin:0 auto;
+	padding:0;
+	height:400px;
+	background-image:url("../imagen/books.jpg");
+	background-position: top;
+	background-repeat: repeat-x;
+	clear:both;
+}
+a.inicio{
+	background-color:#195834;	
+	font-size:0.7em;
+	padding:0.3em;
+	border-radius:20%;
+	color:white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+a.inicio:hover{
+	background-color: #88ce7a;
+}
+a.inicio:active{
+	border: 2px solid black;
+}
+h1{
+	margin-left:5%;
+	color:white;
+	font-size: 6em;
+	font-style: bold;
+}
+
+h4.frase{
+	position:relative;
+	top:30%;
+	left:30%;
+	color:white;
+	font-size: 1.5em;
+	font-style: bold;
+	text-align: center;
+	background-color:black;
+}
+#seccion1{
+	width:100%;
+	margin:0 auto;
+	background-color: #f1d476;
+	float:left;
+}
+#seccion1 p{
+	padding-left:200px;
+	}
+#articulo1{
+	background-color: #e5bb33;
+	padding: 10px;
+	margin:10px;
+}
+h2,h3,h4{
+	color:#1a2475;
+	font-size:1.1em;
+	line-height: 0.5em;
+}
+h2{
+	font-size:2em;
+	text-align: center;
+}
+h3{
+	font-size:1.7em;
+}
+#lunes{
+	float:right;
+}
+#articulo2{
+	margin:10px;
+}
+#articulo2 ul li{
+	list-style-type: none;
+}
+#articulo2 strong{
+	font-weight: bolder;
+	font-style: oblique;
+}
+#seccion2{
+	width:100%;
+	margin: auto;
+	float:left;
+	margin-top:15px;
+	margin-bottom:15px;
+	border:3px groove white;
+}
+#seccion2 li,#seccion2 p{
+	font-size:1.2em;
+}
+#seccion2 ul li{
+	list-style-type: none;
+}
+#wrapper2{
+	float:left;
+}
+ul.listas button{
+	height:35px;
+	padding-right:3px;
+	padding-left:33px;
+	text-transform: uppercase;
+	color:#23649c;
+	font-weight: bold;
+	background-color:white;
+	border-style: ridge;
+	border-width:3px;
+	margin:5px;
+}
+.like{
+	background:url("../imagen/like.ico") no-repeat left center;
+	width:70px;
+}
+.dislike{
+	background:url("../imagen/dislike.ico") no-repeat left center;
+	width:100px;
+}
+.dislike:hover{
+	background-color:red;
+	color:white;
+}
+.like:hover{
+	background-color:green;
+	color:white;
+}
+#articulo4{
+	margin-bottom:5%;
+}
+#articulo3,#articulo4,#articulo5{
+		margin-left:5%;
+}
+#articulo5{
+	float:left;
+}
+#login{
+	height:38px;
+	color:#fff;
+	background-color:#2e518b;
+	text-decoration:none;
+	font-weight:400;
+	font-size:15px;
+	padding:10px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	position:relative;
+	left:40%;
+}
+#login:hover{
+	background:#5b78a7;
+}
+aside{
+	clear:both;
+	margin-left:30px;	
+}
+footer{
+	margin:15px;
+	clear:both;
+}

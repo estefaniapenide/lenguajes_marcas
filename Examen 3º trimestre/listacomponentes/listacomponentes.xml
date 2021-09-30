@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<listacomponentes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="listacomponentes.xsd">
+<componente codigo="aaaAAA" moneda="EURO">
+  <tarjetagrafica>
+  Tarjeta gráfica de <memoria unidad="GB">2</memoria> GB de memoria de <precio>190.00</precio> euros.
+</tarjetagrafica>
+</componente>
+<componente codigo="bbbBBB" moneda="DÓLAR">
+  <monitor> Monitor de 
+  <tamaño>15</tamaño> pulgadas de 
+  <precio>140.00</precio> dólares.
+</monitor>
+</componente>
+</listacomponentes>

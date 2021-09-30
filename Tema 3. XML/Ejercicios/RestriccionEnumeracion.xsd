@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:simpleType name="tipoCoche">
+       <xs:restriction base="xs:string">
+         <xs:enumeration value="Audi"/>
+         <xs:enumeration value="BMW"/>
+         <xs:enumeration value="Citroen"/>
+         <xs:enumeration value="Volkswagen"/>
+       </xs:restriction>
+</xs:simpleType>
+   <xs:element name="coches">
+     <xs:complexType>
+       <xs:sequence>
+         <xs:element name="coche">
+           <xs:simpleType>
+             <xs:restriction base="xs:string">
+               <xs:enumeration value="Audi"/>
+               <xs:enumeration value="BMW"/>
+               <xs:enumeration value="Citroen"/>
+               <xs:enumeration value="Volkswagen"/>
+             </xs:restriction>
+           </xs:simpleType>
+         </xs:element>
+         <xs:element name="otroCoche" type="tipoCoche"/>
+       </xs:sequence>
+     </xs:complexType>
+   </xs:element>
+</xs:schema>

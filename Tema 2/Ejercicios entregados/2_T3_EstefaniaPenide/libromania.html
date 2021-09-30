@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--He empleado una barra de navegación, enlaces, listas no ordenadas, tablas, imágenes y botones. La he estructurado en un header, un main, un aside y un footer. En el header, además del título se ha  introducido una barra de navegación donde están los enlaces para navegar por la propia página, acceder a la otra página con la galería de fotos y enlaces a dos formularios distintos:log in y crear nuevo perfil. A su vez el main cuenta con dos secciones. La primera sección va sobre premios Nadal y la segunda tiene que ver con las contribuciones a la web por parte de la comunidad. Ambas las considero igual de relevantes por eso están en el main. La primera sección está dividida en dos artículos:ultimo premio Nadal y lista de ultimos premiados;  la segunda  está dividida en tres, donde se organizan distintos tipos de contribuciones que se pueden hacer a la web. He introducido un aside con una aclaración ya que pretendo añadirle más cosas a esta paágina para que sea más completa. Finalmente un footer indicando en qué pagina estamos a modo de firma.-->
+	<head>
+		<meta charset="UTF-8">
+		<title>Libromanía</title>
+		<link rel="stylesheet" type="text/css" href="estilos/libromania.css"/>
+		<link rel="stylesheet" type="text/css" href="estilos/barranavegacion.css"/>
+	</head>
+	<body>
+		<div id="wrapper1">
+		<header class="cabecera">
+			<a id="inicio"></a>
+			<h1>Libromanía</h1>
+			<h4 class="frase">La web de los adictos a los libros</h4>
+			<nav>
+				<ul class="mostrar">
+					<li><a href="#premios">Premios Nadal</a>
+						<ul class="esconder">
+							<li class="premios"><a href="#actualnadal">Actual premio Nadal</a></li>
+							<li class="premios"><a href="#nadal">Lista galardonados recientes</a></li>
+						</ul>
+					</li>
+					<li><a href="#recomendaciones">Recomendaciones de la comunidad</a>
+						<ul class="esconder">
+							<li class="comunidad"><a href="#mislistas">Mis listas</a></li>
+							<li class="comunidad"><a href="#listas">Listas creadas por otros usuarios</a></li>
+							<li class="comunidad"><a href="#resenas">Reseñas</a></li>
+						</ul>
+					</li>
+					<li><a href="galeria_de_autores.html">Galería de autores</a>
+						<ul class="esconder">
+							<li class="autores"><a href="galeria_de_autores.html#nobel">Premios Nobel de Literatura</a></li>
+							<li class="autores"><a href="galeria_de_autores.html#cervantes">Premios Miguel de Cervantes</a></li>
+						</ul>
+					</li>
+				</ul>
+				<a href="log_in.html"><button class="perfil" type="button">Log in</button></a>
+				<a href="formulario.html"><button class="perfil" type="button">Crea un nuevo perfil</button></a>
+			</nav>
+		</header>
+		<main>
+			<section id="seccion1">
+				<header>
+					<a id="premios"></a>
+					<h2>Premios Nadal</h2>
+				</header>
+				<article id="articulo1">
+					<header>
+						<img id="lunes" src="imagen/ellunes.jpg" alt="Portada libro El lunes nos querrán"/>
+						<a id="actualnadal"></a>
+						<h3>Actual premio Nadal: <em>El lunes nos querrán</em></h3>
+					</header>
+						<h4>Sinopsis</h4>
+						<p>El lunes nos querrán cuenta la historia de una joven de diecisiete años que desea encontrar la libertad para descubrir qué es lo que la hará feliz. Pero las condiciones de las que parte son complicadas. Vive en un entorno opresivo del que no le será fácil salir sin tener que pagar un precio demasiado alto</p>
+						<h4>Autora: Najat el Hachmi</h4>
+						<p>Najat el Hachmi (Nador, Marruecos, 2 de julio de 1979) es una escritora española de origen marroquí. Licenciada en filología árabe por la Universidad de Barcelona, obtuvo el Premio Ramon Llull de novela en 2007 por L'últim patriarca (El último patriarca). Con anterioridad había escrito el ensayo, Jo també sóc catalana (2004), donde trata de la integración en la cultura catalana de los inmigrantes y en 2015 ganó el Premio Sant Joan de narrativa. También ha sido colaboradora en diversos medios de comunicación como Catalunya Ràdio, El 9 Nou de Vich y en La Vanguardia.</p>
+					<a class="inicio" href="#inicio">Volver al inicio</a>
+				</article>
+				<article id="articulo2">
+					<header>
+						<a id="nadal"></a>
+						<h3>Lista últimos galardonados con los premios Nadal</h3>
+					</header>
+					<ul>
+						<li>2021, Najat el Hachmi, <strong>El lunes nos querrán</strong></li>
+						<li>2020, Ana Merino, <strong>El mapa de los afectos</strong></li>
+						<li>2019, Guillermo Martínez, <strong>Los crímenes de Aliciaa​</strong></li>
+						<li>2018, Alejandro Palomas, <strong>Un amor</strong></li>
+						<li>2017, Care Santos, <strong>Media vida</strong></li>
+						<li>2016, Víctor del Árbol, <strong>La víspera de casi todo</strong></li>
+						<li>2015, José C. Vales, <strong>Cabaret Biarritz</strong></li>
+						<li>2014, Carmen Amoraga, <strong>La vida era eso</strong></li>
+						<li>2013, Sergio Vila-Sanjuán, <strong>Estaba en el aire</strong></li>
+						<li>2012, Álvaro Pombo, <strong>El temblor del héroe</strong></li>
+						<li>2011, Alicia Giménez, <strong>Bartlett</strong></li>
+						<li>2010, Clara Sánchez, <strong>Lo que esconde tu nombre</strong></li>
+						<li>2009, Maruja Torres, <strong>Esperadme en el cielo</strong></li>
+					</ul>
+					<a class="inicio" href="#inicio">Volver al inicio</a>
+				</article>
+			</section>
+			<section id="seccion2">
+				<a id="recomendaciones"></a>
+				<h2>Recomendaciones de la comunidad</h2>
+				<div id="wrapper2">
+				<article id="articulo3">
+					<header>
+						<a id="mislistas"></a>
+						<h3>Mis listas</h3>
+					</header>
+					     <p>Entra en tu perfil para accceder a tus listas creadas.</p>
+					     <a id="login" href="log_in.html">Log in</a><br><br>
+					     <a class="inicio" href="#inicio">Volver al inicio</a>
+				</article>
+				<article id="articulo4">
+					<header>
+						<a id="listas"></a>
+						<h3>Listas creadas por otros usuarios</h3>
+					</header>
+					<ul class="listas">
+						<li><strong>Las mejores novelas históricas</strong>, por Paula López<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+						<li><strong>Las mejores autoras contemporáneas</strong>, por Andrea García<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+						<li><strong>Las mejores antologías de poesía</strong>, por Ignacio González<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+						<li><strong>Mis novelas románticas preferidas</strong>, por Laura Rey<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+					</ul>
+					<a class="inicio" href="#inicio">Volver al inicio</a>
+				</article>
+				</div>
+				<article id="articulo5">
+					<header>
+						<a id="resenas"></a>
+						<h3>Reseñas</h3>
+					</header>
+					<ul class="listas">
+						<li><em>"El señor de los anillos"</em>, por Juan González<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+						<li><em>"Cien años de soledad"</em>, por Esther García<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+						<li><em>"El círculo"</em>, por Gabriel Pérez<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+						<li><em>"Nunca me abandones"</em>, por Carmen Estéve<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+						<li><em>"Egghead"</em>, por Patricia Vázquez<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+						<li><em>"Lila, Lila"</em>, por Adrián Garrido<br><button class="like" type="button">Like</button><button class="dislike" type="button">Dislike</button></li>
+					</ul>
+					<a class="inicio" href="#inicio">Volver al inicio</a>
+				</article>
+			</section>			
+		</main>
+		<aside>
+			Esta web está en proceso de creación. Se irán añadiendo mejoras y más artículos en un futuro próximo.
+		</aside>
+		<footer>
+			<address>Limbromanía&copy;</address>
+		</footer>
+	</div>
+	</body>
+</html>

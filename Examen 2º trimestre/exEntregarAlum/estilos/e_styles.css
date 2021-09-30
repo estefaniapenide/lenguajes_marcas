@@ -1,0 +1,123 @@
+/*---regla para toda la pag web: definir anchura a 800px. Centrarla horizontalmente (sin margen sup ni inf, y los d izq y dcha q 
+los calcule el navegador). Tamaño de texto definido en % con 62.5. La imagen d fondo es bg_page.png, ubicada en la carpeta correspondiente --*/
+body{
+	width:800px;
+	font-size: 62.5%;
+	background-image:url("../images/bg_page.png");
+	background-repeat:repeat;
+	margin: auto;
+}
+
+
+/*---regla para el contenedor ppal definido con una clase: márgenes superior e izquierdo 15px y bordes -color #999, anchura d 1px y discontinuo-  --*/
+.wrapper{
+	border:1px dotted #999;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:15;
+}
+/*---regla para el contenedor ppal definido con la etiqueta semántica correspondiente: márgenes izquierdo 15px y derecho con menos  --*/
+
+header{
+	margin-left:15px;
+	margin-right:10px;
+}
+/*---regla para los títulos principales -h1-: fuente Verdana, tamaño 2.4em, borde inf definido igual q el contenedor ppal, con relleno -menos a la dcha-, 
+color d texto #14556b y color d fondo #e6f3ff, alineación centrada, sin margen.  --*/
+h1{
+	font-family: Verdana;
+	font-size: 2.4em;
+	border-bottom:1px dotted #999;
+	padding-top:2px;
+	padding-left:2px ;
+	padding-bottom:2px ;
+	color:#14556b;
+	background-color:#e6f3ff;
+	text-align: center;
+	margin:0;
+	clear:both;
+}
+
+/*---regla para los párrafos de la clase intro: tamaño de 1.6 con respecto a un interlineado d 160%, tipo d letra Georgia, si no "Times New Roman", si no Times y si 
+no cualquiera de la familia serif; márgenes verticales d 10px y d doble los horizontales, y alineación completa --*/
+p{
+	font-family: Georgia,"Times New Roman", Times, serif;
+	line-height: 160%;
+	font-size:1.6em;
+	margin-right:10px;
+	margin-left:10px;
+	margin-top:20px;
+	margin-bottom: 20px;
+	text-align:justify;
+}
+
+/*---regla para los strong: con más grosor y color navy -*/
+strong{
+	font-weight:bolder;
+	font-color:navy;
+}
+
+/*---regla para el párrafo del footer q contiene el copyright: sin margen izq, fuente Verdana, si no Arial, si no Helvetica y si no sans-serif, tamaño d 1em, 
+convertir texto a mayúculas, color #666666, revisar bordes por si hay q eliminar/añadir alguno con las mismas características, ídem con el relleno y el margen, 
+y asegurarse d q no va a tener ningún otro elemento a ninguno d sus lados --*/
+footer p.copyright{
+	margin-left:0;
+	font-family: Verdana,Arial,Helvetica,sans-serif;
+	font-size:1em;
+	text-transform:uppercase;
+	color:#666666;
+	clear:both;
+	border:1px dotted #999;
+	text-align: left;
+	}
+/*---regla para la imagen y el título q la acompaña (elegir la etiq adecuada q incluye ambos elementos): visualizarla correctamente para conseguir q aparezcan 
+los elementos en línea pero asignando características d elem. en bloque. Definir anchura (un poco mayor q la d las imágenes) y establecer los márgenes. Definir la 
+alineación vertical adecuada. --*/
+figure{
+	display:inline-block;
+	position:relative;
+	left:5px;
+	width:250px;
+	margin:5px;
+
+}
+
+/*---regla para las imágenes q están dentro del figure: redimensionar a 200px y la altura q la calcule el navegador, borde con color #666, relleno, 
+color fondo #CCC y si se quiere poner una peq sombra en las imágenes utilizar la prop. box-shadow con los valores 2px 2px 4px rgba(0,0,0,.5) --*/
+figure img{
+	width:200px;
+	border-color:#666;
+	padding:2px;
+	background-color:#CCC;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+
+/*---regla para el título d las imágenes: fuente Arial, si no Helvetica y si no sans-serif, tamaño de 1.1em e interlineado normal,
+alineación centrada y margen superior d 10px y el resto eliminarlos. --*/
+figure figcaption{
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 1.1em;
+	line-height:normal;
+	text-align: center;
+	margin-top:10px;
+}
+
+/*regla para el enlace q permite regresar a la página principal: darle apariencia d botón (igual q la d la pag ppal), y situarlos en una determinada posición
+dentro d la página web (con respecto a arriba a 450px y con respecto a la derecha a 290 px). tb al acercarse con el puntero del ratón --*/
+.boton{
+	position:absolute;
+	top:450px;
+	right:290px;
+	display:inline-block;
+	margin:2px;
+	padding:10px;
+	text-transform:uppercase;
+	background-color:orange;
+	border-radius:20px;
+	color:white;
+	text-decoration: none;
+}
+.boton:hover{
+	color:green;
+	background-color:white;
+}

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE movimientos SYSTEM "DTD_Caso4.dtd">
+<movimientos>
+	<comprapc>200</comprapc>
+	<comprapc>800</comprapc>
+	<compramonitor>800</compramonitor>
+	<compramonitor>300</compramonitor>
+</movimientos>

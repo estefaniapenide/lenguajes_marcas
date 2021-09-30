@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario3ControlesInputHTML5</title>
+	</head>
+	<body>
+		<header>
+			<h1>Utlizando nuevos controles de input en HTML5</h1>
+		</header>
+		<main>
+			<article>
+				<header>
+					<h2>Hoja de inscripción</h2>
+				</header>
+				<form action="ruta/recurso.php" method="get">
+					¿Le gusta nuestra web?<br>
+					<textarea rows="10" cols="50" name="texto">
+						Aquí puedo empezar a escribir algo y el resto que lo complete quien esté aburrido...
+					</textarea>
+					<fieldset>
+						<legend>Datos personales</legend>
+						Nombre:<input type="text" name="nombre"/><br>
+						Apellidos:<input type="text" name="apellidos"/><br>
+						Email:<input type="email" name=mail/>
+					</fieldset>
+					Elija un editor de codigo:<input list="editor"/>
+						<datalist id="editor">
+							<option value="Atom"/>
+							<option value="Notepad++"/>
+							<option value="VsCode"/>
+							<option value="Sublime"/>
+							<option value="Brackets"/>
+						</datalist>
+				</form>
+			</article>
+		</main>
+	</body>
+</html>

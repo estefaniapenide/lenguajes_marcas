@@ -1,0 +1,54 @@
+body{
+	background-image:url("../imagen/green.jpg");
+	background-repeat:repeat;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:white;
+}
+main{
+	width:500px;
+	height:170px;
+	position:absolute;
+	top:200px;
+	left:30%;
+	border: 3px solid white;
+	text-align: center;
+}
+h1{
+	margin: 8px;
+	text-align: center;
+	font-size: 3em;
+	font-style: bold;
+	border-bottom: 1px solid white;
+}
+a.webprincipal{
+	position:relative;
+	top:5%;
+	left:85%;
+}
+a.inicio{
+	background-color:#b33e64;
+	font-size:0.7em;
+	padding:0.3em;
+	border-radius:20%;
+	color:white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+button{
+	color:white;
+	background-color:#b33e64; 
+}
+aside{
+	width:500px;
+	height:80px;
+	position:absolute;
+	top:380px;
+	left:30%;
+	border: 3px solid white;
+	text-align: center;
+}
+footer{
+	position:fixed;
+	bottom:3em;
+	left:3em;
+}

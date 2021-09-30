@@ -1,0 +1,13 @@
+<!ELEMENT canciones (cancion+)>
+<!ELEMENT cancion (titulo,compositores,productores,sello,artista+)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT compositores (compositor+)>
+<!ELEMENT compositor (nombres,apellidos)>
+<!ELEMENT productores (productor+)>
+<!ELEMENT productor (nombres,apellidos)>
+<!ELEMENT nombres (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT sello (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ATTLIST cancion duracion NMTOKEN #REQUIRED>
+<!ATTLIST cancion anio NMTOKEN #REQUIRED>

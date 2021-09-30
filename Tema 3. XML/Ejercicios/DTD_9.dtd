@@ -1,0 +1,10 @@
+<!ELEMENT listafacturas (facturas)+>
+	<!ELEMENT facturas (emisor,pagador,importe)>
+	<!ELEMENT emisor (nombre,volumenventas?)>
+	<!ELEMENT pagador (nombre,volumenventas?)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT volumenventas (#PCDATA)>
+	<!ELEMENT importe (#PCDATA)>
+	<!ATTLIST facturas fecha NMTOKEN #IMPLIED>
+	<!ATTLIST emisor cif ID #REQUIRED>
+	<!ATTLIST pagador cif ID #REQUIRED>

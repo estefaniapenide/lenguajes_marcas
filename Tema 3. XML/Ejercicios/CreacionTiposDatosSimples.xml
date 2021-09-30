@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tiposdatos xsi:noNamespaceSchemaLocation="CreacionTiposDatosSimples.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<dinero>2.32</dinero>
+<edad>3</edad>
+<contraseña >miContraseña</contraseña>
+<persona dni="11111111A">Juan</persona>
+</tiposdatos>

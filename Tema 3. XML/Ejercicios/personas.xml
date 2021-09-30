@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personas_conozco>
+	<persona nombre="Pablo" trabajo="si">
+		<informacion_general>
+			<direccion_postal>
+				<calle>Barcelona</calle>
+				<numero>10</numero>
+				<piso>3</piso>
+				<letra>A</letra>
+				<cp>36206</cp>
+				<poblacion>Vigo</poblacion>
+				<provincia>Pontevedra</provincia>
+			</direccion_postal>
+			<telefono>886345678</telefono>
+			<direccion_email>xxxxxxx@gmail.com</direccion_email>
+			<coche>Citroen</coche>
+			<fecha_cumpleanos>
+				<dia>12</dia>
+				<mes>04</mes>
+				<ano>1989</ano>
+			</fecha_cumpleanos>
+			<comida_favorita>kjsdfhgj</comida_favorita>
+		</informacion_general>
+		<caracteristicas_personales>
+			<altura>1,80cm</altura>
+			<peso>75Kg</peso>
+			<color_pelo>castaño</color_pelo>
+			<cualidad></cualidad>
+		</caracteristicas_personales>
+	</persona>
+	<persona nombre="María" trabajo="no">
+		<informacion_general>
+			<direccion_postal>
+				<calle>Barcelona</calle>
+				<numero>10</numero>
+				<piso>3</piso>
+				<letra>A</letra>
+				<cp>36206</cp>
+				<poblacion>Vigo</poblacion>
+				<provincia>Pontevedra</provincia>
+			</direccion_postal>
+			<telefono>886345678</telefono>
+			<direccion_email>xxxxxxx@gmail.com</direccion_email>
+			<coche>Citroen</coche>
+			<fecha_cumpleanos>
+				<dia>22</dia>
+				<mes>06</mes>
+				<año>1987</año>
+			</fecha_cumpleanos>
+			<comida_favorita>kjsdfhgj</comida_favorita>
+		</informacion_general>
+		<caracteristicas_personales>
+			<altura>1,65cm</altura>
+			<peso>60Kg</peso>
+			<color_pelo>castaño</color_pelo>
+			<cualidad></cualidad>
+		</caracteristicas_personales>
+	</persona>
+</personas_conozco>

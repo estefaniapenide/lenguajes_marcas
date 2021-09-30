@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE listafacturas SYSTEM "DTD_9.dtd">
+<listafacturas>
+  <facturas fecha="12-12-1990">
+    <emisor cif="A12">
+      <nombre>Juan</nombre>
+    </emisor>
+    <pagador cif="A23">
+      <nombre>Paco</nombre>
+    </pagador>
+    <importe>25</importe>
+  </facturas>
+</listafacturas>

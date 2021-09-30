@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE emails[
+	<!ELEMENT emails (email)*>
+	<!ELEMENT email (de, para+, asunto?,cuerpo?, adjunto*)>
+	<!ELEMENT de (#PCDATA)>
+	<!ELEMENT para (#PCDATA)>
+	<!ELEMENT asunto (#PCDATA)>
+	<!ELEMENT cuerpo (#PCDATA)>
+	<!ELEMENT adjunto (#PCDATA)>
+]>
+<emails>
+	<email>
+		<de>maria@gmail.com</de>
+		<para>ignacio@gamil.com</para>
+		<para>pedro@gmail.com</para>
+		<asunto>Ahí teneis todos los archivos</asunto>
+		<cuerpo>Me deja meter contenido sin usar #PCDATA, de hecho me daba error al meterlo(debe de usarse cuando el elemento lleva solo contenido de este tipo y ninguna otra etiqueta dentro) -> Preguntar.</cuerpo>
+		<adjunto>D:\FOTOS\dePesca.jpg</adjunto>
+		<adjunto>D:\FOTOS\enLaCena.jpg</adjunto>
+	</email>
+</emails>

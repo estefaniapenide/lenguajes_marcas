@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Evolución de audio y vídeo en HTML</title>
+	</head>
+	<body>
+		<!--En el header introduzco el título, una recomendación y la barra de navegación-->
+		<header>
+			<h1><a id="inicio">Evolución de audio y vídeo en HTML</a></h1>
+			<!--La recoemndación de emplear Google Chrome o Microsoft Edge es fruto de realizar diversas pruebas con varios formatos de audio y video en distintos navegadores-->
+			<P>Se recomienda abrir esta página web con Google Chrome o Microsoft Edge para poder reproducir todos sus elementos multimedia.</P>
+			<!--En la barra de navegación se incluyen los enlaces para ir directamente a cada uno de los apartados y una vez en ellos se añade la opcion volver al inicio.-->
+			<nav>
+				<h4>ÍNDICE</h4>
+				<ul>		
+					<li><a href="#evolucion">Evolución del uso de elementos multimedia en las páginas web</a></li>
+					<li><a href="#etiquetas">Etiquetas de audio y video en HTML5</a>
+						<ul>
+							<li><a href="#audio">Etiqueta &lt;audio&gt;</a></li>
+							<li><a href="#video">Etiqueta &lt;video&gt;</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>   
+		</header>
+		<!--El main constará de los dos artículos pedidos en el enunciado de la tarea-->
+		<main>
+			<article>
+				<header>
+					<h2><a id="evolucion">Evolución del uso de elementos multimedia en las páginas web</a></h2>
+				</header>
+				<p>Parar este reproductor para dejar de escuchra la canción "Time" que suena de fondo:<br>
+				<!--Archivo de audio en formato wav atorreprodicido situado en la carpeta audio. Sacado de un banco de audios libres de derechos-->
+				<audio src="audio/time.wav" autoplay controls></audio></p>
+				<p>En un principio las páginas web eran solo texto, pero a medida que ha evolucionado la tecnología, tanto los ordenadores como las redes de telecomunicaciones, se ha generado nuevas formas de desarrollar la web. La inclusión de imágenes fue la más significativa, pero también debemos mencionar el vídeo y la animación, o los espacios 3D, lo que aporta valores estilísticos, de diseño y de interactividad jamás imaginados antes.</p>
+				<p>Con el <strong>HTML2</strong> los diseñadores web pudieron comenzar a introducir elementos nuevos, como <strong>iconos, imágenes de fondo, botones y banners</strong>. A continuación, el <strong>HTML3</strong>, más rico en etiquetas y que ofrecía una mayor flexibilidad, junto al <strong>uso de tablas y a las incipientes hojas de estilo CSS</strong> contribuyó a mejorar la estética y el aspecto visual de las páginas web. La gran novedad en esta época fue la <strong>introducción de las animaciones</strong> con el nacimiento del <strong>formato GIF</strong>. También la aparición de <strong>Flash</strong> aportó gran capacidad de innovación gráfica a las páginas web, que pasó de ser estática a ser dinámica.</p>
+				<p>El nacimiento de la web 2.0 supone un punto de inflexión. Aplicaciones multimedia, contenidos interactivos, redes sociales y dispositivos móviles implican una revisión profunda del desarrollo de páginas. Junto a las <strong>etiquetas de imagenes, iframes, objetos, audio y video de HTML5</strong>, se utilizan lenguajes como <strong>Javascript, PHP, XML o ASP</strong>.</p>
+				<!--Archivos de video autorreproducidos y puestos en loop con fomato mkv y ogv respectivamente y situados en la carpeta video. Ambos sacdos de un banco de videos libres de derechos-->
+				<video src="video/trafic.mkv" autoplay loop controls width="640" height="320"></video>	
+				<video src="video/waterfall1.ogv" autoplay loop controls width="640" height="320"></video><br>
+				<a href="#inicio">Volver al inicio</a>
+				<!--Empleo el aside del artículo para indicar de donde se ha sacado la información del texto y el origen y autoría de los videos y audio libres de derechos, con sus enlaces a las fuentes-->
+				<aside>
+					<h4>Webgrafía consultada y fuente de los elementos multimedia:</h4>
+					<p>
+					<a href="https://es.wikipedia.org/wiki/Dise%C3%B1o_web">Wikipedia: Historia del diesño web</a><br>
+					<a href="https://doriagm.com/la-historia-del-diseno-web/">Doria Global Media: Historia del diseño web</a><br>
+					Vídeo "Trafic" de <a href="https://pixabay.com/es/users/xat-ch-12531001/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=53902">Xavier Turpain</a> y vídeo "Waterfall" de <a href="https://pixabay.com/es/users/nomad_nation_videos-16211452/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=37088">Jean &amp; Martin &amp; Michele Nomad Nation</a>, ambos sacados de <a href="https://pixabay.com/es/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=53902">Pixabay</a><br>
+					Audio "Time" de <a href="/es/users/ashutosh-music-18562360/?tab=audio&amp;utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=audio&amp;utm_content=1051">ASHUTOSH-MUSIC</a> sacado de <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=1051">Pixabay</a>
+					</p>
+				</aside>
+			</article>
+			<article>
+				<header>
+					<h2><a id="etiquetas">Etiquetas de audio y vídeo en HTML5</a></h2>
+				</header>
+				<!--Para exponer las dos etiquetas a explicar empleo una lista no ordenada-->
+				<ul>
+					<li>
+						<h3><a id="audio">Etiqueta &lt;audio&gt;</a></h3>
+						<P>
+							Los <strong>formatos</strong> de audio soporatdos por esta etiqueta son: <strong>MP3, OGG, ACC, Opus, FLAC y WAV.</strong>
+						</P>
+						<!--La descripción de los atributos y sus funciones quedan indicadas en forma de tabala-->
+						<table>
+							<caption><h4>Atributos de la etiqueta &lt;audio&gt;</h4></caption>
+							<colgroup>
+								<col span="1" style="background-color:lightgreen">
+								<col span="2" style="background-color:lightyellow">
+							</colgroup>
+							<tr>
+								<th>Atributo</th>
+								<th>Valor</th> 	
+								<th>Descripción</th>
+							</tr>
+							<tr>
+								<td>src</td> 	
+								<td>Dirección URL</td> 	
+								<td>Audio a reproducir. Obligatoria si actúa como etiqueta contenedora.</td>
+							</tr>
+							<tr>
+								<td>preload</td> 	
+								<td>auto | metadata | none</td> 	
+								<td>Indica como realizar la precarga del audio.</td>
+							</tr>
+							<tr>
+								<td>mediagroup</td> 	
+								<td>nombre</td> 	
+								<td>Establece un nombre para un grupo de contenidos multimedia.</td>
+							</tr>
+							<tr>
+								<td>autoplay</td> 	
+								<td>-</td> 	
+								<td>Comienza a reproducir el audio automáticamente.</td>
+							</tr>
+							<tr>
+								<td>loop</td> 	
+								<td>-</td> 	
+								<td>Vuelve a iniciar el audio cuando finaliza su reproducción(bucle).</td>
+							</tr>
+							<tr>
+								<td>muted</td> 	
+								<td>-</td> 	
+								<td>Establece el audio sin sonido(silenciado).</td>
+							</tr>
+							<tr>
+								<td>controls</td> 	
+								<td>-</td> 	
+								<td>Muestra los controles de reproducción.</td>
+							</tr>
+						</table>
+						<p>Ejemplo del código empleado para insertar el audio que se muestra a continuación:<br>
+						<!--Añado una captura de este mismo código para mostrar cómo se usa la etiqueta de audio-->
+						<img src="imagen/audio.jpg" alt="Codigo de la inserción del audio" height="25"/></p>
+						<!--Incluyo un archivo de audio grabado por mi en formato mp3. Este, además de servir de ejemplo de funcionanmiento de la etiqueta de audio para formato mp3, lo empleo para dar una pequeña acalaración de los formatos de audio que he comprobado que se reproducen o no según el navegador empleado-->
+						<audio src="audio/audio.mp3" controls></audio>
+					</li>
+					<a href="#inicio">Volver al inicio</a>
+					<li>
+						<h3><a id="video">Etiqueta &lt;video&gt;</a></h3>
+						<p>
+							Los <strong>formatos</strong> de vídeo soportados por esta etiqueta son: <strong>MP4, WebM, Ogv, MKV, AVI y HEVC.</strong>
+						</p>
+						<!--La descripción de los atributos y sus funciones quedan expesadas en forma de tabala-->
+						<table>
+							<caption><h4>Atributos de la etiqueta &lt;video&gt;</h4></caption>
+							<colgroup>
+								<col span="1" style="background-color:lightgreen">
+								<col span="2" style="background-color:lightyellow">
+							</colgroup>
+							<tr>
+								<th>Atributo</th>
+								<th>Valor</th> 	
+								<th>Descripción</th>
+							</tr>
+							<tr>
+								<td>src</td> 	
+								<td>Dirección URL</td> 	
+								<td>Video a reproducir. Obligatoria si actúa como etiqueta contenedora.</td>
+							</tr>
+							<tr>
+								<td>poster</td> 	
+								<td>Dirección URL</td> 	
+								<td>Muestra una imagen a modo de presentación.</td>
+							</tr>
+							<tr>
+								<td>preload</td> 	
+								<td>auto | metadata | none</td> 	
+								<td>Indica como realizar la precarga del vídeo.</td>
+							</tr>
+							<tr>
+								<td>mediagroup</td> 	
+								<td>nombre</td> 	
+								<td>Establece un nombre para un grupo de contenidos multimedia.</td>
+							</tr>
+							<tr>
+								<td>autoplay</td> 	
+								<td>-</td> 	
+								<td>Comienza a reproducir el vídeo automáticamente.</td>
+							</tr>
+							<tr>
+								<td>loop</td> 	
+								<td>-</td> 	
+								<td>Vuelve a iniciar el vídeo cuando finaliza su reproducción.</td>
+							</tr>
+							<tr>
+								<td>muted</td> 	
+								<td>-</td> 	
+								<td>Establece el vídeo sin sonido.</td>
+							</tr>
+							<tr>
+								<td>controls</td> 	
+								<td>-</td> 	
+								<td>Muestra los controles de reproducción.</td>
+							</tr>
+							<tr>
+								<td>width</td> 	
+								<td>tamaño</td> 	
+								<td>Indica el tamaño de ancho del vídeo.</td>
+							</tr>
+							<tr>
+								<td>height</td> 	
+								<td>tamaño</td> 	
+								<td>Indica el tamaño de alto del vídeo.</td>
+							</tr>
+						</table>
+						<p>Ejemplo del código empleado para insertar el vídeo que se muestra a continuación:<br>
+						<!--Añado una captura de este mismo código para mostrar cómo se usa la etiqueta de vídeo-->
+						<img src="imagen/video.jpg" alt="Codigo de la inserción del audio" height="25"/></p>
+						<!--Incluyo un archivo de vídeo grabado por mi en formato mp4, con loop para que se repita y asignándole un tamaño determinado. A diferencia de los vídeos anteriores, este también tiene audio para probar que no se reproducen solo las imágenes -->
+						<video src="video/video.mp4" loop controls width="1280"></video>
+						<!--Incluyo otro archivo de audio grabado por mi en formato oog para poner otro ejemplo de formato de audio compatible y para dar ciertas aclaraciones sobre cuales son los formatos de vídeo que reproducen ciertos navegadores y cuales no-->
+						<audio src="audio/video.ogg" controls></audio>
+					</li>
+					<a href="#inicio">Volver al inicio</a>
+				</ul>
+				<!--Empleo el aside del artículo para indicar de donde se ha sacado la información de las etiquetas-->
+				<aside>
+					<h4>Webgrafía consultada:</h4>
+					<p>
+					<a href="https://www.um.es/docencia/barzana/DAWEB/2017-18/daweb-tema-5-multimedia-en-html.html">Enlace 1</a>
+					<a href="https://developer.mozilla.org/es/docs/Web/HTML/Usando_audio_y_video_con_HTML5">Enlace 2</a>
+					<a href="https://www.campusmvp.es/recursos/post/como-insertar-audio-en-html5.aspx">Enlace 3</a>
+					<a href="https://lenguajehtml.com/html/multimedia/etiquetas-html-de-video/">Enlace 4</a>
+					</p>
+				</aside>
+			</article>
+		</main>
+		<!--Añado un footer donde indico la autoría de la página y para qué fin se creó-->
+		<footer>
+			 Tarea de Estefanía Penide Casanova para el módulo Lenguajes de marcas y sistemas gestores de información, Ciclo Superior DAM, IES Teis.
+		</footer>
+	</body>
+</html>

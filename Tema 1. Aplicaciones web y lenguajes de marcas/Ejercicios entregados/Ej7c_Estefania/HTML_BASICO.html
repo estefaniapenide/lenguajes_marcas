@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML BASICO</title>
+	</head>
+	<body>
+		<header>
+			<div align="center">
+				<!--Esta es l única imagen que he dimensionado usando el % ya que quería introducir al menos una en esta página y es la que menos desharminiza el texto final cuando hacemos zoom en el navegador-->
+				<h1>HTML BÁSICO</h1>
+				<!--Imagen con enlace-->
+				<a href="imagenes/HTML.jpg">
+					<figure>
+						<img src="imagenes/HTML.jpg" width=50%  alt="Inicio código HTML en Sublime Text"/>
+						<figcaption>Si pinchas en esta imagen la puedes ver ampliada</figcaption>
+					</figure>
+				</a>
+						<p>La idea de esta página es aplicar las <b>etiquetas</b> más básicas de <b>HTLM</b> vistas hasta ahora.</p>
+						<p>Para ello, en los siguientes apartados, se comentará brevemente cuáles han sido expliacadas en clase. 
+						Todas ellas han sido utilizadas para la elaboración<br>de este documento HTML y el formato del mismo 
+						es la muestra de cómo funcionan.</p>
+						<p>Así, se repasa la teoría a la vez que se ponen en práctica los conocimientos adquiridos.</p>			
+			</div>
+<!--Como los principales elementos por los que se puede navegar en esta web son los artículos, el navegador (más adelante cuando tenga las herramientas) proporcionará un acceso rápido a cada uno de ellos-->
+			<nav>
+				<h3>Navegador de artículos</h3>
+				<!--Enlace interno. Enlace destino para volver desde los distintos artículos al inicio.-->
+				<a id="vuelta"></a>
+					<ul>
+						<!--Enlaces internos.Enlaces origen para ir directamente a los artículos-->
+						<li><a href="#s1a1">¿Cuál es la estructura básica de un documento HTML?</a></li>
+						<li><a href="#s1a2">Etiquetas estructurales básicas</a></li>
+						<li><a href="#s2a1">Semántica en HTML 5</a></li>
+						<li><a href="#s2a2">Etiquetas semánticas</a></li>
+					</ul>
+			</nav>
+		</header>
+<!--En el main haré una introducción de los elementos básicos de los documentos HTML: las etiquetas. Pero como el principal objetivo de la página es el trabajo con HTML, habrá que elaborar esta introducción de forma estructurada pero sin quitarle importacia, por lo que dentro del main se situarán varias secciones con sus correspondientes artículos-->
+		<main>
+			<h1>Conceptos principales</h1>
+			<p><mark>Las etiquetas son el elemento base del lenguaje HTML</mark>. Sirven para delimitar la estructura lógica/semántica del documento HTML y para delimitar los elementos que contiene la<br> 
+			página: párrafo, tabla, imagen...Pueden tener atributos o parámetros, según las características que deseemos aplicar.</p>
+			<p><strong>Se escriben entre símbolos de menor &quot;&lt;&quot; y mayor &quot;&gt;&quot;:</strong>
+				<ul>
+					<li><b>Apertura: &lt;etiqueta&gt;</b></li>
+					<li><b>Cierre: &lt;/etiqueta&gt;</b></li>
+				</ul>
+			</p>
+			<figure>
+			<p>Todo lo incluído entre esas marcas, se adaptará a las caraterísticas que define dicha etiqueta.</p>
+				<img src="imagenes/etiquetas.jpg" width="250" alt="Ejemplo uso de etiquetas">
+				<figcaption>Ejemplo uso de etiquetas</figcaption>
+			</figure>
+			<h4>Etiquetas anidadas</h4> 
+			<p>Cuando un elemento contiene dentro otro elemento se deben cerrar primero las etiquetas abiertas en último lugar. A pesar de anidar incorrectamente las etiquetas,<br>
+				en general, los navegadores son capaces de visualizar el contenido correctamente.</p>
+			<figure>
+				<img src="imagenes/anidadas.jpg" height="80" alt="Etiquetas anidadas">
+				<figcaption>Cómo anidar las etiquetas</figcaption>
+			</figure>
+			<h4>Atributos</h4>
+			<p>Hay etiquetas a las que se les pueden asignar diferentes propiedades, aplicando a cada una el valor correspondiente, el cual, variará el comportamiento del elemento.<br>
+             Para asignar un valor se usa el signo de “=“ y el valor va entre comillas dobles.</p>
+             <figure>
+				<img src="imagenes/atributos.jpg" height="70" alt="Atributos dentro de las etiquetas">
+				<figcaption>Cada etiqueta puede llevar varios atributos</figcaption>
+			</figure>
+<!--El main lo he dividido en 2 secciones. Una hará referencia a la estructura y otra a la semántica-->
+<!--Esta es la sección relacionada con la estructutura. Está dividida en 2 artículos. Uno introduciendo la estructura general de un documento html y el otro comentando las principales etiquetas estructurales.--> 
+			<section><header><h1>Estructura</h1></header>
+<!--Articulo 1 de la Seccion 1: Estructura básica de un documento HTML--> 
+				<article>
+					<header>
+						<!--Enlace interno. Enlace de destino para llegar aquí desde el navegador-->
+						<a id="s1a1"></a>
+						<h2>¿Cuál es la estructura básica de un documento HTML?</h2>
+						<!--Enlace interno. Enlace origen para volver al navegador -->
+						<a href="#vuelta">Volver a la barra de navegación</a>
+					</header>
+						<ol>
+							<li>
+								<h3>Tipo de HTML: DOCTYPE</h3>
+									<p>Indica el tipo de documento.</p>
+									<p>No es obligatorio, pero sigue el estándar de HTML 5 y XHTML.</p>
+							</li>
+							<li>
+								<h3>Documento: &lt;html&gt; y &lt;/html&gt;</h3>
+									<p>Marca el principio y fin de un documento HTML.</p>
+									<p>Es importante indicar el idioma del documento, utilizando el aributo <b>lang</b>.</p>
+							</li>
+							<li>
+								<h3>Cabecera: &lt;head&gt; y &lt;/head&gt;</h3>
+									<p>Datos que no aparecen en la página y que afectan al funcionamiento de toda la página.</p>
+									<p>Incluye información para los <b>navegadores</b> y para los <b>buscadores</b>.</p>
+									<p>Elementos habituales:</p>
+										<ul>
+											<li>
+												<b>meta</b>: información sobre las cabeceras del protocolo http, caducidad de la página, palabras clave para búsquedas,<br>
+												sistema de codificación de caracteres de la página, …
+											</li>
+											<li>
+												<b>Título de la página (&lt;title&gt; y &lt;/title&gt;)</b>:Importante, es como se conocerá nuestra página, aparece en la etiqueta de la<br> barra de título del navegador.
+											</li>
+											<li>
+												Declaración de <b>archivos externos y scripts</b>.
+											</li>
+										</ul>
+							</li>
+							<li>
+								<h3>Cuerpo: &lt;body&gt; y &lt;/body&gt;.</h3>
+									<p>Incluye el contenido semántico de la página web: texto, imágenes, enlaces, ...</p>
+							</li>
+						</ol>
+						<div align="center">
+							<figure>
+								<img src="imagenes/estructura.jpg" width="430" alt="Estructura">
+								<figcaption>Estructura básica</figcaption>
+							</figure>
+						</div>
+				</article>
+<!--Artículo 2 de la Sección 1: Etiquetas estructurales vistas en clase con su correspondiente explicación-->
+				<article>
+					<header>
+						<!--Enlace interno. Enlace de destino para llegar aquí desde el navegador-->
+						<a id="s1a2"></a>
+						<h2>Etiquetas estructurales básicas</h2>
+						<!--Enlace interno. Enlace origen para volver al navegador -->
+						<a href="#vuelta">Volver a la barra de navegación</a>
+					</header>
+					<ul>
+						<li>
+							<dl>
+								<a id="vueltatitulos"></a>
+								<dt><h3>Títulos</h3></dt>
+								<dd>
+									Son etiquetas que <strong>formatean el texto como un titular</strong>: mayor tamaño letra, negrita, ...Realizan <b>pequeñas variaciones</b> según el navegador utilizado<br>
+									y se usan para dividir secciones en nuestra página: titulares. No es recomendable utilizarlos para resaltar cualquier texto.<br>
+            											<pre>
+			                      		             		<b>Desde &lt;h1&gt; hasta &lt;h6&gt;</b>
+			                      		             	</pre>
+			    				<dd>
+							</dl>
+							<!--Enlace externo, local. Enlace origen. Enlace ruta relativa.-->
+							<a href="webs/ejemplotitulos.html">Ejemplo web con distintos títulos</a>							
+							<figure>
+								
+									<img src="imagenes/titulos.jpg" width="500" alt="Títulos vistos en el navegador">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagenes/titulos2.jpg" width="700" alt="Cóidgo fuente de los títulos">
+									<figcaption>Aquí se ve como se escribe el código fuente y cómo quedaría en el navegador</figcaption>								
+							</figure>						
+						</li>
+						<li>
+							<dl>
+				    			<dt><h3>Comentarios</h3></dt>
+								<dd>
+									Líneas de código que <b>el navegador no interpreta</b> ignorándolas. Muy útiles para saber qué hace cada parte de código.<br>
+									Imprescindibles <b>para futuras revisiones y mantenimiento</b> de las páginas web. <br><br>
+														<pre>
+				                                           <b>Los comentarios se escriben entre &lt;!-- y --&gt;.</b>
+				                                        </pre>
+				            	</dd>
+				   			</dl>
+				   			<figure>
+								<img src="imagenes/comentarios.jpg" width="430" alt="Comentarios">
+								<figcaption>Los comentarios se pueden ver aquí en verde</figcaption>
+							</figure>
+				    	</li>
+				    	<li>
+				    		<dl>
+				    			<a id="vueltaespacios"></a>
+								<dt><h3>Saltos de líena y espacios en blanco</h3></dt>
+								<dd>
+									Hay que tener en cuenta que <b>HTML ignora todos los espacios y líneas
+									en blanco sobrantes.</b>
+								</dd>
+							<dl>
+								<ol>
+									<li>
+										<dl>
+											<dt><h4>Saltos de línea: &lt;br&gt; o &lt;br&gt; &lt;/br&gt; o &lt;br /&gt;</h4></dt>
+											<dd>
+				 								Es una de las etiquetas especiales: <b>etiqueta vacía</b>, ya que no encierra ningún texto. Equivale a presionar la tecla Enter, forzando a que el texto que<br>
+				 								sigue se muestre en la siguiente línea.
+							 				</dd>
+										</dl>
+									</li>
+									<li>
+										<dl>
+											<dt><h4>Espacios en blanco: &amp;nbps;</h4></dt>
+											<dd>
+												Permite incluir <b>espacios en blanco adicionales</b>. Cada entidad <b>&amp;nbsp; equivale a un espacio en blanco</b> -non-breaking space-.
+											</dd>
+										</dl>
+									</li>
+									<!--Enlace externo, local. Enlace origen. Enlace ruta relativa.-->
+										<a href="webs/ejemploespacios.html">Ejemplo web con texto con espacios en blanco y saltos de línea</a>
+									<li>
+										<dl>
+											<a id="vueltapre"></a>
+											<dt><h4>Texto preformateado: &lt;pre&gt; y &lt;/pre&gt;</h4></dt>
+											<dd>								
+											Muestra el <b>texto tal y como se ha escrito</b>, respetando todos los espacios en blanco y todas las nuevas líneas. Útil cuando es necesario mostrar los<br>
+											espacios en blanco de un texto que no se puede modificar:<br>
+											<ul>
+				       			 				<li>Cuando una página web debe mostrar directamente el texto generado por alguna aplicación.</li>
+				       				 			<li>Para mostrar el código fuente, respetando las sangrías del margen izquierdo.</li>
+				       				 		</ul>
+				       				 		</dd>
+										</dl>
+										<!--Enlace externo, local. Enlace origen. Enlace ruta relativa.-->
+										<a href="webs/ejemplopre.html">Ejemplo web con texto preformateado</a>
+										<figure>
+											<img src="imagenes/pre.jpg" width="430" alt="Texto preformateado">
+											<figcaption>Tal y como está escrito en este código fuente, esa será su apariencia en el navegador</figcaption>
+										</figure>
+									</li>
+								</ol>
+						</li>
+						<li>
+							<dl>
+								<dt><h3>Entidades</h3></dt>
+								<dd>
+								Las entidades son códigos especiales que permiten escribir <b>símbolos</b> que <b>no</b> están <b>disponibles</b> en el teclado o que <b>no se pueden usar</b>.
+											<pre>
+				                       		Ejemplos:
+
+				                             		<b>&lt; = &amp;lt;                        &ntilde; = &amp;ntilde;          
+				                              		&gt; = &amp;gt;                        &eacute; = &amp;eacute;
+				                              		&amp; = &amp;amp;                       &euro; = &amp;euro;
+				                             		&quot; = &amp;quot;                      &apos; = &amp;apos;
+				                              		(espacio en blanco) = &amp;nbsp;  </b>  
+											</pre> 
+								</dd>
+							</dl>
+						</li>
+						<li>
+							<dl>
+								<dt><h3>Listas</h3></dt>
+								<dd>
+								Las listas permiten <b>crear párrafos agrupados</b> mediante símbolos de viñetas o de números. Se pueden <b>anidar</b>, mezclando los diferentes tipos.<br>
+								Cada opción de las <b>listas</b> debe ir entre las <b>etiquetas &lt;li&gt; y &lt;/li&gt;</b>.
+								</dd>
+							</dl>
+							<figure>
+								<img src="imagenes/listas.jpg" width="300" alt="Estructura listas">
+								<figcaption>Sintaxis de las listas</figcaption>
+							</figure>
+								<h4>Tipos de listas:</h4>
+									<ul>
+										<li>
+											<dl>
+												<dt><h5>Listas no ordenadas: &lt;ul&gt; y &lt;/ul&gt;</h5></dt>
+													<dd>
+														Colección simple de elementos en la que <b>no importa el orden</b> en el que se muestran dichos elementos.<br>
+														Su formato predeterminado es un círculo negro a la izquierda del elemento y algo tabulado.
+													</dd>
+													<dd>
+														<h6>Sintaxis:</h6>
+														<ul>
+															<li><b>&lt;ul&gt; y &lt;/ul&gt;</b>: etiqueta de inicio y de fin de lista. Encierra todos los elementos de la lista.</li>
+															<li><b>&lt;li&gt; y &lt;/li&gt;</b>: etiqueta que encierra cada elemento de la lista.</li>
+														</ul>
+													</dd>
+											</dl>
+											<figure>
+												<img src="imagenes/listasnoordenadas1.jpg" width="200" alt="Sintaxis listas no ordenadas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagenes/listasnoordenadas2.jpg" width="200" alt="Apariencia listas no ordenadas en navegador">
+												<figcaption>Sintaxis listas no ordenadas/Apariencia en navegador</figcaption>
+											</figure>
+										</li>
+										<li>
+											<dl>
+												<dt><h5>Listas ordenadas: &lt;ol&gt; y &lt;/ol&gt;</h5></dt>
+													<dd>
+														Elementos numerados en los que <b>sí importa el orden</b>.<br>
+														Su formato predeterminado es un número a la izquierda del elemento y algo tabulado.
+														<!--Enlace externo, local.Enlace ruta relativa. Enlace detino de una sección anclada en otra página En este caso su destino está ubicado en la web de tipos de vino en el primer ejemplo de listas ordenadas-->
+														<a href="webs/tiposdevino/tiposdevino.html#listasordenadas">Ver ejemplo de listas ordenadas </a>
+														<!--Enlace destino para volver de la web de tipos de vinos, desde la zona a la que nos dirigimos con el enlace anterior-->
+														<a id="listasordenadas"></a>
+													</dd>
+													<dd>
+														<h6>Sintaxis:</h6>
+														<ul>
+															<li><b>&lt;ol&gt; y &lt;/ol&gt;</b>: etiqueta de inicio y de fin de lista. Encierra todos los elementos de la lista.</li>
+															<li><b>&lt;li&gt; y &lt;/li&gt;</b>: etiqueta que encierra cada elemento de la lista.</li>
+														</ul>
+													</dd>
+											</dl>
+											<figure>
+												<img src="imagenes/listasordenadas1.jpg" width="250" alt="Sintaxis listas ordenadas">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagenes/listasordenadas2.jpg" width="250" alt="Apariencia listas ordenadas en navegador">
+												<figcaption>Sintaxis listas ordenadas/Apariencia en navegador</figcaption>
+											</figure>
+										</li>
+										<li>
+											<dl>
+												<dt><h5>Listas de definición: &lt;dl&gt; y &lt;/dl&gt;</h5></dt>
+													<dd>
+														<b>Empareja un término con su definición</b>, similar a un diccionario.<br>
+														Su formato predeterminado es un número a la izquierda del elemento y algo tabulado.<br>
+														Cada término puede tener asociada más de una definición y cada definición puede tener asociada varios términos.
+													</dd>
+													<dd>
+														<h6>Sintaxis:</h6>
+														<ul>
+															<li><b>&lt;dl&gt; y &lt;/dl&gt;</b>: etiqueta de inicio y de fin de lista. Encierra todos los elementos de la lista.</li>
+															<li><b>&lt;dt&gt; y &lt;/dt&gt;</b>: término a definir.</li>
+															<li><b>&lt;dd&gt; y &lt;/dd&gt;</b>: definición del término.</li>
+														</ul>
+													</dd>
+											</dl>
+											<figure>
+												<img src="imagenes/listasdefinicion1.jpg" width="350" alt="Sintaxis listas de definición">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagenes/listasdefinicion2.png" width="250" alt="Apariencia listas de definicion en navegador">
+												<figcaption>Sintaxis listas de definición/Apariencia en navegador</figcaption>
+											</figure>
+										</li>
+									</ul>
+									<!--Enlace externo, local. Enlace ruta retlativa. Enlace origen de una sección anclada en ootra página. En este caso su destino está ubicado en la web de tipos de vino al final donde hay listas no ordenadas anidadas en listas ordenadas-->
+									<a href="webs/tiposdevino/tiposdevino.html#listasanidadas">Ejemplo de listas anidadas</a>
+									<!--Enlace destino para volver de la web de tipos de vinos, desde la zona a la que nos dirigimos con el enlace anterior-->
+									<a id="vueltaanidadas"></a>
+						</li>
+						<li>
+							<dl>
+								<dt><h3>Imágenes: &lt;img /&gt;</h3></dt>
+								<dd>
+									<b>Primer contenido no textual incorporado al estándar HTML</b>. Son fundamentales para que las páginas web sean más atractivas. Los <b>formatos compatiblles</b> con la<br>
+									mayoría de navegadores son: <b>jpg, gif, png, webp y svg</b>.
+								</dd>
+								<dd>
+									Para añadir imágenes es recomendable mantener una cierta <mark>lógica en la estructura de los archivos => crear una subcarpeta que contenga las imágenes. Es necesario<br>
+									indicar la ruta de la imagen a partir de donde está la página que llamaa esa imagen. También es imprescindible indicar la extensión del archivo de la imagen</mark>.<br>
+									La imagen se muestra con el tamaño original.
+								</dd>
+							</dl>
+										<h4>Atributos</h4>
+											<ul>
+												<li><b>width</b>: para indicar una anchura diferente a la que tiene la imagen por defecto, permitiendo así el redimensionamiento de la misma.</li>
+												<li><b>height</b>: para indicar una altura diferente a la que tiene la imagen por defecto, permitiendo así el redimensionamiento de la misma.</li>
+												<li><b>alt</b>: por motivos de accesibilidad, nos puede interesar mostrar un texto que acompañe a la imagen.</li>
+											</ul>
+											<!--Enlace remoto. Enlace ruta absoluta a una página exterior-->
+											<a href="https://www.noticias.ltda/online-marketing/seo/seo-imagenes-atributos-alt-y-titulo/" rel="nofollow" rev="noreferer">¿Por qué debemos utilizar alt y title en las imágenes?</a>
+						</li>
+						<li>
+							<dl>
+								<dt><h3>Crear capas o divisiones: &lt;div&gt; y &lt;/div&gt;</h3></dt>
+								<dd>
+									Es un “agrupador” de contenido: <b>estructura elementos en bloque</b>. Era la etiqueta imprescindible en las versiones anteriores a Html 5 para marcar divisiones y conseguir<br>
+									simplificar el código.
+								</dd>
+							</dl>
+							<figure>
+									<img src="imagenes/div.jpg" width="300" alt="Estructura div">
+									<figcaption>Estructura div</figcaption>
+							</figure>
+							</li>
+						</li>
+						<li>
+							<dl>
+								<dt><h3>Agrupamiento: &lt;hgroup&gt; &lt;/hgroup&gt;</h3></dt>
+								<dd>
+									Se usaba <b>para agrupar un conjunto de uno o más elementos de encabezado &lt;h1&gt;, …, &lt;h6&gt; para que pudiesen ser manejados como una unidad en el árbol del documento,<br>
+									sin comprometer el valor semántico de cada etiqueta</b>. Dentro de un elemento hgroup sólo podemos manejar etiquetas de tipo encabezado. También se puede utilizar para agrupar<br>metadatos.
+								</dd>
+							</dl>
+							<figure>
+									<img src="imagenes/hgroup.jpg" width="350" alt="Estructura hgroup">
+									<figcaption>Estructura hgroup</figcaption>
+							</figure>
+						</li>
+						<li>
+							<dl>
+								<dt><h3>Marcar contenido: &lt;span&gt; y &lt;/span&gt;</h3></dt>
+								<dd>
+									Permite <b>marcar contenido en el interior de un elemento tipo bloque</b>, como los párrafos. Se utilizaba mucho en versiones anteriores a Html 5 ya que permitía diferenciar<br>
+									diferentes partes del contenido. Actualmente se utilizan otras etiuetas/atributos.
+								</dd>
+							</dl>
+							<figure>
+									<img src="imagenes/span.jpg" width="500" alt="Estructura span">
+									<figcaption>Estructura span con ejemplos de sus posibles atributos</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</article>
+			</section>
+<!--Esta es la sección relacionada con la semántica. Está dividida en 2 artículos. Uno introduciendo la semántica en HTML 5 y el otro comentando las principales etiquetas semánticas.--> 
+			<section><header><h1>Semántica</h1></header>
+<!--Artículo 1 de la Sección 2: Explicación de la introducción de etiquetas semánticas con HTML5-->
+				<article>
+					<header>
+						<!--Enlace interno. Enlace de destino para llegar aquí desde el navegador-->
+						<a id="s2a1"></a>
+						<h2>Semántica en HTML 5</h2>
+						<!--Enlace interno. Enlace origen para volver al navegador -->
+						<a href="#vuelta">Volver a la barra de navegación</a>
+					</header>
+							<p>Hay determinadas etiquetas <b>(&lt;div&gt;, &lt;group&gt;, &lt;span&gt;, etc)</b> que indican de forma inequívoca las distintas partes de las que consta un página, <br>
+							pero no les aportan ningún valor semántico. <b>Con la llegada de las etiquetas semánticas de HTML 5, estas quedan obsoletas</b>.</p> 
+							<p>En Html 5 crearon un <b>conjunto de etiquetas específicas (&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;aside&gt;,<br>
+							 &lt;footer&gt;, &lt;mark&gt;, &lt;figure&gt;, &lt;figcaption&gt;, etc) que aportan gran valor semántico y estructural a las páginas web</b>. Las etiquetas nativas<br>
+							 en el Cuerpo a partir de HTML 5 añaden valor semántico y estructural indicando las distintas partes de las que consta un página. Son <b>útiles para posicionamiento</b>.</p>
+							 <div align="center">
+							 	<figure>
+									<img src="imagenes/semantica.png" height="300" alt="Semantica html">
+									<figcaption>Valor semántico y estructural</figcaption>
+								</figure>
+							</div>
+				</article>
+<!--Artículo 2 de la Sección 2: Explicación del uso de cada una de las etiquetas semánticas-->
+				<article>
+					<header>
+					<!--Enlace interno. Enlace de destino para llegar aquí desde el navegador-->
+					<a id="s2a2"></a>
+					<h2>Etiquetas semánticas: nativas en el Cuerpo a partir de HTML 5</h2>
+					<!--Enlace interno. Enlace origen para volver al navegador -->
+					<a href="#vuelta">Volver a la barra de navegación</a>
+					</header>
+						<ul>
+							<li>
+								<dl>
+									<dt><h3>Cabecera: &lt;hader&gt; y &lt;/header&gt;</h3></dt>
+									<dd>
+										Información relacionada con el sitio web: a nivel del cuerpo del documento, representa la parte principal de la página web –nombre de la empresa, logo, <br>
+										título principal, menú… Se usa <b>para marcar un grupo de elementos de introducción o de navegación para indicar que pertenecen a la cabecera de la página</b>.<br>
+										Se puede usar una por cada sección de la página y NO se pueden anidar (una cabecera dentro de otra).
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/header.jpg" width="350" alt="Estructura header">
+									<figcaption>Estructura header</figcaption>
+								</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Barra de Navegación: &lt;nav&gt; y &lt;/nav&gt;</h3></dt>
+									<figure>
+										<img src="imagenes/barranavegacion2.jpg" width="500" alt="Apariencia navegador con CSS">
+										<figcaption>Apariencia navegador con CSS</figcaption>
+									</figure>
+									<dd>
+										Se usa <b>para marcar una sección del documento cuya función es la navegación por la página web</b>, ya sea dentro del documento actual o a otros documentos. Se puede<br>
+										escribir dentro de cualquier elemento HTML estructural pero no debe usarse para todos los grupos de enlaces de la página. Es útil para posicionamiento.
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/barranavegacion.jpg" width="200" alt="Apariencia navegador con HTML">
+									<figcaption>Apariencia navegador</figcaption>
+							</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Principal: &lt;main&gt; y &lt;/main&gt;</h3></dt>
+									<dd>
+										Se usa <b>para definir el contenido principal o destacado de la página web</b>. Puede incluir artículos, cabeceras, títulos, párrafos, secciones de imagen,…<br>
+										Sólo puede haber un elemento main en una página web. Permite diferenciar las secciones de menú, publicidad o cualquier tipo de información en la página considerada<br>			como secundaria.<b>NO puede colocarse dentro de secciones de tipo article, footer, header, aside o nav</b>, pero sí se admite dentro de section, para marcar elementos principales<br> dentro de una sección.
+										<!--Enlace remoto. Enlace ruta absoluta-->
+										<a href="https://www.htmlquick.com/es/reference/tags/main.html">Aclaración sobre el uso de la etiqueta main</a>
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/main.jpg" width="250" alt="Estructura main">
+									<figcaption>Estructura main</figcaption>
+							</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Secciones: &lt;section&gt; y &lt;/section&gt;</h3></dt>
+									<dd>
+										Se usa <b>para dividir el documento en diferentes partes, marcando una sección para cada una de esas partes de la página web</b>. Se trata de una grupación temática del contenido.<br>
+										Permiten organizar contenido relacionado -bloques de información- de la página: capítulos, introducción, lista de noticias, novedades, chat, información de contacto, etc.<br>
+										Sustituye en la función de valor semántico a &lt;div&gt; y suele llevar una cabecera.
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/section.jpg" width="300" alt="Estructura section">
+									<figcaption>Estructura de las secciones</figcaption>
+							</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Artículos: &lt;article&gt; y &lt;/article&gt;</h3></dt>
+									<dd>
+										Útiles <b>para cualquier información que tenga sentido propio por si misma y sea propensa a la reutilización</b>. Se usan para marcar contenido independiente que tendría sentido<br> fuera del contexto de la página actual y que podría sindicarse (RSS). Permiten dividir las secciones en varios artículos.
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/article.jpg" width="300" alt="Estructura article">
+									<figcaption>Estructura de los artículos</figcaption>
+								</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Añadidos: &lt;aside&gt; y &lt;/aside&gt;</h3></dt>
+									<dd>
+										Sección opcional que no forma parte del perfil principal del documento, aunque está relacionado con el contenido del mismo. <b>Permite marcar texto dentro de un artículo para<br> que no se tenga en cuenta como parte del texto del artículo, sino como un texto aparte que permite realizaraclaraciones al artículo, referencias, resúmenes remarcados y <br>sobre todo cuadros de texto de estilo periodístico para destacar partes del artículo</b>.
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/aside.jpg" width="300" alt="Estructura aside">
+									<figcaption>Estructura de los añadidos</figcaption>
+								</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Pie de página: &lt;footer&gt; y &lt;/footer&gt;</h3></dt>
+									<dd>
+										Última parte de la página (o de la sección). Puede haber varios &lt;footer&gt; por página. Si se coloca al nivel del elemento body, servirá <b>para indicar el pie general de<br> la página que suele contener información sobre el autor, copyright, términos de uso de la página, contacto, etc.</b> NO se puede anidar (colocar un footer dentro de otro ni <br>puede estar dentro de header).
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/footer.jpg" width="300" alt="Estructura footer">
+									<figcaption>Código del pie de página</figcaption>
+								</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Dirección: &lt;addresss&gt; y &lt;/address&gt;</h3></dt>
+									<dd>
+										En versiones anteriores se utilizaba para incluir la dirección postal de contacto, o para indicar el nombre del autor de un artículo. A partir de la versión 5, se usa <b>para<br>incluir la dirección de correo electrónico</b>. Es habitual que se encuentre dentro del &lt;footer&gt; de la página.
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/address.jpg" width="300" alt="Estructura address">
+									<figcaption>Código de la dirección metido en el pie de página</figcaption>
+								</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Marcar contenido: &lt;mark&gt; y &lt;/mark&gt;</h3></dt>
+									<dd>																	
+										<b>Permite resaltar una parte de texto</b>, aquella que consideremos relevante. La apariencia predeterminada es usar un fondo amarillo. Se puede utilizar en una página que muestra<br>los resultados de búsqueda para resaltar cada uno de estos por palabra.
+									</dd>
+								</dl>
+									<h4>Diferencias con respecto a &lt;strong&gt;:</h4>
+										<ul>
+											<li>&lt;strong&gt;: marca intervalos de texto de especial importancia.</li>
+											<li>&lt;mark&gt;: marca intervalos de texto de especial relevancia.</li>
+										</ul>
+								<figure>
+									<img src="imagenes/mark.jpg" width="300" alt="Apariencia mark">
+									<figcaption>Apariencia de mark en el navegador</figcaption>
+								</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Marcar ilustraciones: &lt;figure&gt; y &lt;/figure&gt;</h3></dt>
+									<dd>
+										<b>Permite marcar ilustraciones, diagramas, fotos, ejemplos de código, etc.</b> a los que se hace referencia directa en el contenido de la página web. Se puede referir a un<br> elemento individual o a varios. El contenido que agrupa es independiente, es decir, se podría mover en su conjunto a otro sitio y no perdería su significado.
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/figure.jpg" width="300" alt="Estructura figure">
+									<figcaption>Código figure</figcaption>
+								</figure>
+							</li>
+							<li>
+								<dl>
+									<dt><h3>Añadir una leyenda a ilustraciones: &lt;figcaption&gt; y &lt;/figcaption&gt;</h3></dt>
+									<dd>
+										Se usa <b>para poner un título o leyenda a una o varias imágenes marcadas con &lt;figure&gt;</b>. Se puede colocar antes o después del contenido. La leyenda debe estar<br> relacionada con el contenido especificado en &lt;figure&gt;. Consigue el efecto de colocar un título al principio o al pie de una o varias imágenes. Tanto la imagen<br>
+										como el texto quedarán alineados de la misma forma.
+									<dd>
+								</dl>
+								<figure>
+									<img src="imagenes/figurecaption.jpg" width="300" alt="Estructura figurecaption">
+									<figcaption>Código para añadir leyenda a las ilustraciones</figcaption>
+								</figure>
+							</li>
+						</ul>
+				</article>
+			</section>
+		</main>
+		<br>
+		<br>
+		<br>
+<!--Al ser un tema en el que todo el contenido pertenerce al main, por el momento en el aside solo se deja un pequeño comentario aclaratorio. En el futuro se empleará para pequeñas notas que se consideren que no pertenecen al elemento principal de la página-->
+		<aside>
+			<p>Actualmente en este documneto se han empleado etiquetas que todavía no figuran aquí explicadas. Próximamente se pondrá al día para que su contenido esté a corde con su estructura.</p>
+			<p>Estas son las etiquetas vistas hasta el momento. Este documento se irá modificando a medida que vaya conociendo más.</p>
+			<!--Enlace externo, con archivo-->
+			<p>Para descargar el contenido original en PDF de donde se ha sacado la información de esta página, se puede hacer aquí:<a href="archivos/1b2_Html_Daw_111.pdf">HTML LMSXI DAM</a></p>
+		</aside>
+		<br>
+		<br>
+		<br>
+<!--Empleo el footer para cerrar indicando de dónde sale toda la información e imágenes-->
+		<footer>
+			<h5>Referencias bibliográficas</h5>
+			<p>Todo el texto empleado para la realización de esta web ha sido sacado de los apuntes de 
+			<address> Maria Isabel Posada González, para la asignatura de Lenguajes de Marcas y Sistemas de Información, 1º Ciclo Superior  de DAM, IES TEIS, Vigo.</address></p>
+			<h5>Contacto</h5>
+			<!--Enlace externo, con dirección de correo-->
+			<p>Para cualquier duda contactar<address><a href="mailto:infolmsxi@gmail.com">infolmsxigmail.com</a></address></p>		
+		</footer>    
+	</body>
+</html>			                              
+
+
+
+
+

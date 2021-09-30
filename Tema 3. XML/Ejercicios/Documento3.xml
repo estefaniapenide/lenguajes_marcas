@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE p [
+<!ELEMENT p (strong)*>
+<!--
+<!ELEMENT periodo (#PCDATA|programa)*>
+<!ELEMENT programa (nombre,licencia+,SO+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT licencia (#PCDATA)>
+<!ELEMENT SO (#PCDATA)>
+-->
+  ]>
+<p>
+  <strong>
+    <em>
+    </em>
+  </strong>
+</p>

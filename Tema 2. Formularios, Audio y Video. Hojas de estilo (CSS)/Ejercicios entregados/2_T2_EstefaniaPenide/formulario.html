@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Perfil Libromanía</title>
+	</head>
+	<body>
+		<header>
+			<a href="libromania.html">Volver a la página principal</a>
+			<a href="imagen/biblioteca.jpg">
+			<img src="imagen/biblioteca.jpg" width="1500" height="150" alt="biblioteca"/></a>
+		</header>
+		<!--El main de esta página solo consta de un artículo que ya su único proposito es mostrar solo formulario para recopilar datos-->
+		<main>
+			<article>
+				<header><h2>Crea tu perfil</h2></header>
+				<!--Empleo el método post ya que se trata de un fromulario que edita datos que se almacenarían en una base de datos, también necesitaría el atributo enctype ya que se pide que se adjunten archivos-->
+				<form action="ruta/recurso.php" method="post" enctype="multipart/form-data">
+					<p>
+						<!--Para agrupar los campos en categorías distintas divido el formulario en varios apartados empleando la etiqueta fieldset-->
+						<fieldset>
+							<legend><h3>Datos personales</h3></legend>
+							Foto de perfil:<br>
+							<img src="imagen/fotoperfil.png" width="100" alt="Foto de perfil en blanco"/>
+							<!--Uso el tipo file de modo que acepte varios archivos en formato png, jpeg y jpg-->
+							<input type="file" name="fotoperfil[]" multiple accept="image/png, .jpeg, .jpg"><br>
+							*Puedes subir varias fotos y guardarlas en tu galería para cambiar la foto de perfil cuando quieras.<br><br>
+							<!--Uso el tipo text y defino el cuadro de texto con una longitud determinada-->
+							<label for="nombre">Nombre:</label>
+								<input type="text"  id="nombre" name="nombre" size="15"/><br>
+							<label for="apellidos">Apellidos:</label>
+								<input type="text"  id="apellidos" name="apellidos" size="30"/><br>
+							<!--Uso el tipo password y el número de caracteres que se pueden introducir además de definir la longitud del cuadro de texto mostrado)-->
+							<label for="contrasena">Contraseña (máximo 20 caracteres):</label>
+								<input type="password"  id="contrasena" name="contrasena" size="15" maxlength="20" /><br>
+							<label for="mail">E-mail:</label>
+							<!--Uso el tipo email para que el navegador avise si se mete el valor equivocado en el campo-->
+								<input type="email"  id="mail" name="mail" size="50"/><br>
+							<!--Uso el tipo tel e indico que no admita más de 12 caracteres(longitud de telefono+prefijo internacional)-->
+							<label for="telefono">Móvil:</label>
+								<input type="tel"  id="telefono" name="telefono" size="10" maxlength="12" /><br>
+							<!--Uso el tipo date para poder elegir una fecha a partir del calenadrio mostrado por el navegador-->
+							<label for="fnac">Fecha de nacimiento:</label>
+								<input type="date"  id="fnac" name="fechanacimiento"/><br>
+							<!--Añado el campo de la comunidad autónoma para usar la etiqueta datalist pero no he encontrado ningun navegador en el que funcione-->
+							<label for="comau">Comunidad autónoma:</label>
+								<input list="ca"  id="comau" name="ca"/>
+									<datalist id="ca">
+										<option value="Andalucía"/>
+										<option value="Aragón"/>
+										<option value="Asturias"/>
+										<option value="Baleraes"/>
+										<option value="Canarias"/>
+										<option value="Cantabria"/>
+										<option value="Castilla-La Mancha"/>
+										<option value="Castilla y León"/>
+										<option value="Cataluña"/>
+										<option value="Comunidad Valenciana"/>
+										<option value="Extremadura"/>
+										<option value="Galicia"/>
+										<option value="La Rioja"/>
+										<option value="Comunidad de Madrid"/>
+										<option value="Región de Murcia"/>
+										<option value="Navarra"/>
+										<option value="País Vasco"/>
+										<option value="Ceuta"/>
+										<option value="Melilla"/>
+									</datalist>
+						</fieldset>
+					</p>
+					<p>
+						<fieldset>
+							<legend><h3>¿Qué debemos saber de ti?</h3></legend> 
+								<p>
+									Escribe una pequeña bio para conocerte mejor. Háblanos de ti, de tus gustos literarios y cuéntanos qué esperas de libromanía:<br>
+									<!--Uso la etiqueta textarea dandole un tamaño determinado, para poder añadir la biografía pedida. Añado un inicio de frase como ayuda para empezar el texto-->
+									<textarea rows="10" cols="50" name="texto">Me encanta leer porque...
+									</textarea>
+								</p>
+								<p>
+									Mis géneros favoritos son:<br>
+									<!--Uso el tipo checkbox para poder elegir varias opciones-->
+									<label>
+										<input type="checkbox" name="genero" value="aventuras"/>Aventuras
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="ficcion"/>Ciencia ficción
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="gotica"/>Novela gótica
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="negra"/>Novela negra
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="policiaca"/>Policíaca
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="romantica"/>Romántica
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="distopica"/>Distópica
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="fantastica"/>Fantasía
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="terror"/>Terror
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="historica"/>Histórica
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="misterio"/>Misterio
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="poesia"/>Poesía
+									</label>
+									<label>
+										<input type="checkbox" name="genero" value="ensayo"/>Ensayo
+									</label>
+								</p>
+								<p>
+									Mis libros de cabecera:<br>
+									<label for="libro1">Título:</label><input type="text" id="libro1" name="libro1"/>
+									<label for="autor1">Autor:</label><input type="text" id="autor1" name="autor1"/>
+									<!--Uso la etiqueta select con el atributo múltiple para poder elegir dentro de la lista propuesta más de un género en caso de que el libro mencionado pueda clasificrse como más de uno. Agrupo los géneros para que la lsita quede más clara-->
+									<label>Género(s):
+										<select multiple name="genero1">
+											<option value="nin">Ninguno de la lista</option>
+											<optgroup label="Novela">
+												<option value="av">Aventuras</option>
+												<option value="cf">Ciencia ficcion</option>
+												<option value="got">Gótica</option>
+												<option value="neg">Novela negra</option>
+												<option value="pol">Policíaca</option>
+												<option value="rom">Romántica</option>
+												<option value="dis">Distópica</option>
+												<option value="his">Histórica</option>
+												<option value="fan">Fantasía</option>
+												<option value="mis">Misterio</option>
+											</optgroup>
+											<optgroup label="Ensayo">
+												<option value="fil">Filosofía</option>
+												<option value="fem">Feminismo</option>
+												<option value="bio">Biografía</option>
+												<option value="cs">Ciencias sociales</option>
+												<option value="eco">Economía</option>
+											</optgroup>
+											<optgroup label="Poesía">
+												<option value="cont">Poesía contemporanea</option>
+												<option value="cla">Poesía clásica</option>
+												<option value="ext">Poesía extranjera</option>
+											</optgroup>
+										</select>
+									</label><br>
+									<label for="libro2">Título:</label><input type="text" id="libro2" name="libro2"/>
+									<label for="autor2">Autor:</label><input type="text" id="autor2" name="autor2"/>
+									<label>Género(s):
+										<select multiple name="genero2">
+											<option value="nin">Ninguno de la lista</option>
+											<optgroup label="Novela">
+												<option value="av">Aventuras</option>
+												<option value="cf">Ciencia ficcion</option>
+												<option value="got">Gótica</option>
+												<option value="neg">Novela negra</option>
+												<option value="pol">Policíaca</option>
+												<option value="rom">Romántica</option>
+												<option value="dis">Distópica</option>
+												<option value="his">Histórica</option>
+												<option value="fan">Fantasía</option>
+												<option value="mis">Misterio</option>
+											</optgroup>
+											<optgroup label="Ensayo">
+												<option value="fil">Filosofía</option>
+												<option value="fem">Feminismo</option>
+												<option value="bio">Biografía</option>
+												<option value="cs">Ciencias sociales</option>
+												<option value="eco">Economía</option>
+											</optgroup>
+											<optgroup label="Poesía">
+												<option value="cont">Poesía contemporanea</option>
+												<option value="cla">Poesía clásica</option>
+												<option value="ext">Poesía extranjera</option>
+											</optgroup>
+										</select>
+									</label><br>
+									<label for="libro3">Título:</label><input type="text" id="libro3" name="libro3"/>
+									<label for="autor3">Autor:</label><input type="text" id="autor3" name="autor3"/>
+									<label>Género(s):
+										<select multiple name="genero3">
+											<option value="nin">Ninguno de la lista</option>
+											<optgroup label="Novela">
+												<option value="av">Aventuras</option>
+												<option value="cf">Ciencia ficcion</option>
+												<option value="got">Gótica</option>
+												<option value="neg">Novela negra</option>
+												<option value="pol">Policíaca</option>
+												<option value="rom">Romántica</option>
+												<option value="dis">Distópica</option>
+												<option value="his">Histórica</option>
+												<option value="fan">Fantasía</option>
+												<option value="mis">Misterio</option>
+											</optgroup>
+											<optgroup label="Ensayo">
+												<option value="fil">Filosofía</option>
+												<option value="fem">Feminismo</option>
+												<option value="bio">Biografía</option>
+												<option value="cs">Ciencias sociales</option>
+												<option value="eco">Economía</option>
+											</optgroup>
+											<optgroup label="Poesía">
+												<option value="cont">Poesía contemporanea</option>
+												<option value="cla">Poesía clásica</option>
+												<option value="ext">Poesía extranjera</option>
+											</optgroup>
+										</select>
+									</label><br>
+								</p>
+								<p>
+									Crea tus listas de libros. Agrúpalos por temas, autores, etc...<br>Tus listas serán visibles por los miembros de la comunidad y tú podrás consultar otras listas.<br>
+									<!--Creo un botón que de momento no funciona con vistas a poder modificarlo en el futuro-->
+									<button type="button">Crear lista</button>
+								</p>
+								<p>
+									También puedes añadir tus propias reseñas y compartirlas con la comunidad<br>Añade una reseña pinchando en la imagen:<br>
+									<!--Creo un botón hecho con input imagen que de momento no funciona con vistas a poder modificarlo en el futuro-->
+									<input type="image" src="imagen/resena.jpg" alt="Boton crear reseña"/>
+								</p>
+								<p>
+									¿Qué nos dices de tus otras redes sociales?<br>
+									Añade las URLs de tus otras redes para que la gente te encuentre y te conozca un poco mejor:<br>
+									<!--Vuelvo a usar la etiqueta select pero esta vez sin la opción multiple, para que solo se pueda escoger una de las opciones-->
+									<select name="Lista1"/>
+									<optgroup label="Red social...">
+										<option value="facebook"/>Facebook</option>
+										<option value="twitter"/>Twitter</option>
+										<option value="instagram"/>Instagram</option>
+										<option value="otra"/>Otra</option>
+									</optgroup>
+									</select>
+									<label for="redsocial1">URL:</label>
+									<!--Uso el tipo url para que el navegador avise si se mete el valor equivocado en el campo-->
+										<input type="url"  id="redsocial1" name="redsocial1" size="60"/><br>
+									<select name="Lista2"/>
+									<optgroup label="Red social...">
+										<option value="facebook"/>Facebook</option>
+										<option value="twitter"/>Twitter</option>
+										<option value="instagram"/>Instagram</option>
+										<option value="otra"/>Otra</option>
+									</optgroup>
+									</select>
+									<label for="redsocial2">URL:</label>
+										<input type="url"  id="redsocial2" name="redsocial1" size="60"/><br>
+									<select name="Lista3"/>
+									<optgroup label="Red social...">
+										<option value="facebook"/>Facebook</option>
+										<option value="twitter"/>Twitter</option>
+										<option value="instagram"/>Instagram</option>
+										<option value="otra"/>Otra</option>
+									</optgroup>
+									</select>
+									<label for="redsocial3">URL:</label>
+										<input type="url"  id="redsocial3" name="redsocial1" size="60"/><br>
+									<select name="Lista4"/>
+									<optgroup label="Red social...">
+										<option value="facebook"/>Facebook</option>
+										<option value="twitter"/>Twitter</option>
+										<option value="instagram"/>Instagram</option>
+										<option value="otra"/>Otra</option>
+									</optgroup>
+									</select>
+									<label for="redsocial4">URL:</label>
+										<input type="url"  id="redsocial4" name="redsocial1" size="60"/><br>
+								</p>
+						</fieldset>
+					</p>
+					<p>
+						<fieldset>
+							<legend><h3>Apariencia</h3></legend>
+							<p>
+								<label for="tamanoletra">Tamaño de letra:</label>
+								<!--Uso el tipo number para elegir un tamaño de letra acotandolo con un máximo y un mínimo y poniendo un salto de dos en dos-->
+									<input type="number" id="tamanoletra" min="2" max="36" step="2"/>&nbsp;&nbsp;&nbsp;	&nbsp;&nbsp;						
+								<label for="color">Elije el color del tema de tu perfil:</label>
+								<!--Uso el tipo color para elegir de entre todod uno para el tema de la apariencia del perfil-->
+									<input type="color" id="color"/><br>
+								<label>Estilo de letra:<br>
+									<!--Uso una etiqueta select donde se puedan ver las opciones de dos en dos-->
+									<select name="tipoletra" size="2">
+										<option value="arial">Arial</option>
+										<option value="calibri">Calibri</option>
+										<option value="calisto">Calisto</option>
+										<option value="times">TimesNewRoman</option>		
+									</select>
+							</p>
+							<p>
+								Elije una imagen de fondo de perfil:
+								<!--Añado una tabla para que queden más organizadas las opciones de una etiqueta input tipo radio. Estas opciones serán imágenes, salvo la última en la que se permitirá emplear un archivo propio-->
+								<table border="1" rules="all">
+									<tr>
+										<td>
+											<label>
+												<input type="radio" name="fondo" value="blanco"/><img src="imagen/blanco.jpg" width="275" alt="sin fondo">
+											</label>
+										</td>
+										<td>
+											<label>
+												<input type="radio" name="fondo" value="libros1"/><img src="imagen/libros1.jpg" alt="libros1">
+											</label>
+										</td>
+										<td>
+											<label>
+												<input type="radio" name="fondo" value="libros2"/><img src="imagen/libros2.jpg" alt="libros2">
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label>
+												<input type="radio" name="fondo" value="libros3"/><img src="imagen/libros3.jpg" alt="libros3">
+											</label>
+										</td>
+										<td>
+											<label>
+												<input type="radio" name="fondo" value="libros4"/><img src="imagen/libros4.jpg" alt="libros4">
+											</label>
+										</td>
+										<td>
+											<label>
+												<input type="radio" name="fondo" value="libros5"/><img src="imagen/libros5.jpg" alt="libros5">
+											</label>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label>
+												<input type="radio" name="fondo" value="libros6"/><img src="imagen/libros6.jpg" alt="libros6">
+											</label>
+										</td>
+										<td>
+											<label>
+												<input type="radio" name="fondo" value="libros7"/><img src="imagen/libros7.jpg" width="275" alt="libros7">
+											</label>
+										</td>
+										<td>
+											<label>
+												<!--Uso el tipo file aceptando solo archivos de imagen para poder adjuntar otro fondo de pantalla a emplear-->
+												<input type="radio" name="fondo" value="propia"/><input type="file" name="fondoperfil"  accept="image/png, .jpeg, .jpg" >
+											</label>
+										</td>
+									</tr>
+								</table>
+							</p>
+						</fieldset>
+					</p>
+					<p>
+						<label>
+							<!--Uso el atributo checked del tipo radio aquí para que por defecto salga marcada que quiere recibir la Newsletter-->
+							<input type="radio" name="newsletter" value="sinewsletter"checked/>QUIERO recibir la Newsletter mensual de Libromanía a mi cuenta de correo.
+						</label><br>
+						<label>
+							<input type="radio" name="newsletter" value="nonewsletter"/>NO QUIERO recibir la Newsletter mensual de Libromanía a mi cuenta de correo.
+						</label>
+					</p>
+					<p>
+						<!--Uso los tipos reset y submit para crear los botones de borrar todo y guardar -->
+						<input type="reset" value="Borrar todo"/>
+						<input type="submit" value="Guardar"/>
+					</p>
+				</form>
+			</article>
+		</main>
+		<!--Creo un aside para añadir una nota aclaratoria-->
+		<aside>
+			Nota: Los datos registrados en esta web serán tratados conforme a la ley de protección de datos.
+		</aside>
+		<!--Creo un footer para idicar la web a la que pertenece este formulario-->
+		<footer>
+			<address>Limbromanía&copy;</address>
+		</footer>
+	</body>
+</html>

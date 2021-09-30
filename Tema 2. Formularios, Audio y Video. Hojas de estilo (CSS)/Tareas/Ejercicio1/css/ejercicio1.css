@@ -1,0 +1,6 @@
+* {color:blue;}
+h1, h2 {font-size:25px;font-family:Arial;}
+h1, p {color:grey;}
+p {font-family:Verdana;}
+p a {color:red;}
+p em {color:grey;} /*No entiendo porqué hay que poner este. Debería ser suficiente con la tercera regla*/

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="listacomponentes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="componente" minOccurs="1" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:choice>
+              <xs:element name="tarjetagrafica" minOccurs="0" maxOccurs="1">
+              <!--Lo defino como mixed para poder escribir las frases tal y como vienen en el examen-->
+                <xs:complexType mixed="true">
+                  <xs:sequence>
+                    <xs:element name="memoria" minOccurs="1" maxOccurs="1">
+                      <xs:complexType mixed="true">
+                        <xs:attribute name="unidad">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="GB"/>
+                              <xs:enumeration value="TB"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element ref="precio" minOccurs="1" maxOccurs="1"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="monitor" minOccurs="0" maxOccurs="1">
+               <!--Lo defino como mixed para poder escribir las frases tal y como vienen en el examen-->
+                <xs:complexType mixed="true">
+                  <xs:sequence>
+                    <xs:element name="tamaño" type="xs:integer" minOccurs="1" maxOccurs="1">
+                    </xs:element>
+                    <xs:element ref="precio" minOccurs="1" maxOccurs="1"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+            <xs:attribute name="codigo" use="required">
+              <xs:simpleType>
+                <xs:restriction base="xs:string">
+                  <xs:length value="6"/>
+                </xs:restriction>
+              </xs:simpleType>
+            </xs:attribute>
+            <!--En la correción del enunciado se le asigna el atributo moneda a componente-->
+                        <xs:attribute name="moneda">
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:enumeration value="EURO"/>
+                              <xs:enumeration value="DÓLAR"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <!--En la correción del enunciado se define el tipo del precio como un número con 2 decimales-->
+  <xs:element name="precio">
+    <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+        <xs:fractionDigits value="2"/>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+</xs:schema>

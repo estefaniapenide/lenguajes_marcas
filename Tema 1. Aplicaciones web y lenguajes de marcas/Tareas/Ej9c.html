@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejercicio9c</title>
+	</head>
+	<body>
+		<header>
+			<h1></h1>
+		</header>
+		<main>
+			<article>
+				<header>
+					<h2>Danos tú opinion</h2>
+				</header>
+				<form action="ruta/recurso.php" method="get">
+					<fieldset>
+						<legend>Datos personales</legend>
+							<label>
+							Escribe tu nombre:<input type="text" name="nombre"/>
+							</label><br>
+							<label>
+							Escribe el e-mail:<input type="email" name="mail"/></label><br>
+							<label>
+							Escribe tu teléfono:<input type="tel" name="telefono"/></label>
+					</fieldset>
+					<fieldset>
+						<legend>Cuestionario</legend>
+							¿Te gusta nuestra web?<br>
+							<textarea rows="15" cols="50" name="texto">
+							</textarea>
+					</fieldset>
+					<input type="image" src="imagenes/icono1.jpg"/>
+					<input type="image" src="imagenes/icono2.jpg"/><br>
+					<p>
+						<h2>Mostrar varias opciones</h2>
+						¿Cómo valorarías nuestra web?
+						<select name="Lista1"/>
+							<option value="a"/>muy buena</option>
+							<option value="b"/>buena</option>
+							<option value="c"/>normal</option>
+							<option value="d"/>mala</option>
+							<option value="e"/>muy mala</option>
+						</select>
+					</p>
+					<p>
+						<h2>Mostrar y elegir varias opciones</h2>
+						¿Cómo valorarías nuestra web?
+						<input type="checkbox" name="web" value="u"/>
+						<select name="Lista1" size="3"/>
+							<option value="aa"/>muy buena</option>
+							<option value="bb"/>buena</option>
+							<option value="cc"/>normal</option>
+							<option value="dd"/>mala</option>
+							<option value="ee"/>muy mala</option>
+						</select>
+					</p>
+					<p>
+						<input type="submit" name="enviar" value="Enviar"/>
+						<input type="reset" name="restablecer" value="Restablecer"/>
+					</p>
+				</form>
+			</article>
+		</main>
+	</body>
+</html>

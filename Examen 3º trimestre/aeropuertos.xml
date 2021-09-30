@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aeropuertos [
+<!ELEMENT aeropuertos (aeropuerto+)>
+<!ELEMENT aeropuerto (nombre,vuelos,fecha)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT vuelos (vuelo+)>
+<!ELEMENT vuelo (diario?,origen,destino,horaSalida,horaLlegada)>
+<!ATTLIST vuelo codigo ID #REQUIRED>
+<!ATTLIST vuelo estado (C|E|R) "E">
+<!ELEMENT diario EMPTY>
+<!ELEMENT origen (#PCDATA)>
+<!ELEMENT destino (#PCDATA)>
+<!ELEMENT horaSalida (#PCDATA)>
+<!ELEMENT horaLlegada (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+]>
+<aeropuertos>
+<aeropuerto>
+<nombre>JFK</nombre>
+<vuelos>
+<vuelo codigo="V22" estado="R">
+<diario/>
+<origen>New York</origen>
+<destino>Chicago</destino>
+<horaSalida>9:30</horaSalida>
+<horaLlegada>11:30</horaLlegada>
+</vuelo>
+<vuelo codigo="V23" estado="R">
+<origen>New York</origen>
+<destino>Miami</destino>
+<horaSalida>10:15</horaSalida>
+<horaLlegada>11:15</horaLlegada>
+</vuelo>
+</vuelos>
+<fecha>20/12/2013</fecha>
+</aeropuerto>
+</aeropuertos>

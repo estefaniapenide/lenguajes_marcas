@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE productos [
+<!ELEMENT productos (raton|teclado)*>
+<!ELEMENT raton (codigo,descripcion?)>
+<!ELEMENT teclado (codigo,descripcion,peso?)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+  ]>
+  <productos>
+  <raton>
+  <codigo>R1</codigo>
+  <descripcion>Ratón normalillo</descripcion>
+  </raton>
+  <raton>
+  <codigo>R2</codigo>
+  </raton>
+  <teclado>
+  <codigo>T1</codigo>
+  <descripcion>Teclado normalillo</descripcion>
+  <peso>200gr</peso>
+  </teclado>
+  <raton>
+  <codigo>R2</codigo>
+  </raton>
+  <teclado>
+  <codigo>T2</codigo>
+  <descripcion>Teclado mejor que el T1</descripcion>
+  </teclado>
+  </productos>

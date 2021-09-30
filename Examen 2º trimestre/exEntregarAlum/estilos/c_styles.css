@@ -1,0 +1,35 @@
+/*---regla para la barra d navegación d la cabecera: modificar el posicionamiento para conseguir q aparezca aproximadamente tal y como se muestra en el pdf--*/
+
+/*---regla para la lista d la barra d navegación d la cabecera: sin margen ni relleno y eliminando las viñetas --*/
+
+/*---regla para cada elemento d la lista d la barra d navegación d la cabecera: deben aparecer en horizontal --*/
+
+/*---regla para cada enlace d la lista d la barra d navegación d la cabecera: asignar la visualización adecuada, relleno (valor d 20px a izqa y dcha, 
+y menor arriba y abajo), borde, esquinas redondeados de 20px, tamaño, separación letras, margen dcho, bordes, color de fondo...
+El color d fondo y el d borde es rgb(232,113,35)--*/
+
+/*---regla para los enlaces: color #207EBF, borde inferior color #F60, negrita, sin subrayado --*/
+
+/*---regla para los enlaces visitados: color #6E97BF --*/
+
+/*---regla para los enlaces q se están señalando: color #FFF, color fondo y color borde #6E97BF --*/
+
+/*---regla para los enlaces q son para enviar un correo, indicar en el selector d atributos q el valor del mismo empieza por "mailto:" con ^=
+aplicar un color #666666, sin borde, mostrar como imagen/icono el fichero email.gif q está en la subcarpeta images, con relleno y margen izq --*/
+
+/*---regla para los enlaces q están dentro del aside (tiene definido una clase, asignar el selector adecuado): relleno a la dcha y sin borde  inferior --*/
+
+/*---regla para los enlaces q están dentro del aside cuya dirección comienza por http:// (se refiere a los enlaces remotos): 
+mostrar como imagen/icono el fichero globe.png q está en la subcarpeta images --*/
+
+/*---regla para los enlaces q están dentro del aside cuya dirección termina con '.pdf', indicarlo utilizando el selector adecuado con $=
+mostrar como imagen/icono el fichero acrobat.png q está en la subcarpeta images --*/ 
+
+/*---idem q el anterior, para los enlaces cuya dirección termina con '.zip' , la imagen es zip.png --*/
+
+/*---idem q el anterior, para los enlaces cuya dirección termina con '.doc' , la imagen es word.png --*/
+
+/*---regla para los enlaces q están dentro del aside cuando se están señalando con el puntero del ratón: color 
+de fondo con transparencia y cambia d color --*/
+
+

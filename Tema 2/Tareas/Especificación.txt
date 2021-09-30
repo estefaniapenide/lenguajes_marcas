@@ -1,0 +1,23 @@
+Ejercicio especificidad:
+
+<ul>
+    <li>Lista con selectores redundantes</li>
+    <li class="important">Con clase</li>
+    <li id="id1">Con id id1</li>
+    <li id="id2" class="important">Con id id2 y clase important</li>
+    <li id="id3" class="important" style="color:pink">Con id id3, clase important y atributo style</li>
+</ul>    
+
+
+			a)#id1, #id2, #id3 {color:red;}
+			b)ul li.important {color:green;}
+			c)ul li {color:blue;}
+			d)li.important {color:yellow;}
+			e)li {color:purple;}	
+
+
+Con id id3, clase important y atributo style -> pink
+Con id id1 -> red
+Con id id2 y clase important ->red
+Con clase ->green
+Lista con selectores redundantes ->blue (empate entre c y d, pero c está primero)

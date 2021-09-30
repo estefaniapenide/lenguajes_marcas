@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE declaraciones [
+<!ELEMENT declaraciones (constante | tipo_de_dato | variable)+>
+<!ELEMENT constante (#PCDATA)>
+<!ATTLIST constante valor CDATA #REQUIRED>
+<!ELEMENT tipo_de_dato (#PCDATA)>
+<!ELEMENT variable (#PCDATA)>
+<!ATTLIST variable tipo CDATA #IMPLIED>
+]>
+<declaraciones>
+<constante valor="3.141592">PI</constante>
+<variable tipo="real">radio</variable>
+<variable>areas</variable>
+<variable>longitud</variable>
+</declaraciones>

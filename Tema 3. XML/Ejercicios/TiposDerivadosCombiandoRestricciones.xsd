@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:simpleType name="tipoNota">
+  <xs:union>
+    <xs:simpleType>
+    <xs:restriction base="xs:integer">
+    <xs:minInclusive value="0"/>
+    <xs:maxInclusive value="10"/>
+    </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType>
+    <xs:restriction base="xs:string">
+    <xs:enumeration value="NP"/>
+    </xs:restriction>
+    </xs:simpleType>
+  </xs:union>
+  </xs:simpleType>
+<xs:element name="notas">
+<xs:complexType>
+<xs:sequence>
+  <xs:element name="nota" type="tipoNota"/>
+</xs:sequence>
+  </xs:complexType>
+  </xs:element>
+</xs:schema>

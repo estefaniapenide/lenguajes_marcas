@@ -1,0 +1,6 @@
+p b{color:red;}
+p > b{color:yellow;}
+a:hover{
+				text-decoration-line: green
+				background-color:yellow;
+			}

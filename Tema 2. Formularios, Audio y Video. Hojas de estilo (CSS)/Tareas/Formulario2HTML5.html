@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario2ControlesInputHTML5</title>
+	</head>
+	<body>
+		<header>
+			<h1>Utlizando nuevos controles de input en HTML5</h1>
+		</header>
+		<main>
+			<article>
+				<header>
+					<h2>Hoja de inscripción</h2>
+				</header>
+				<form action="ruta/recurso.php" method="post" enctype="multipart/form-data">
+					<p>
+						<label>Nombre:
+							<input type="text" name="nombre" />
+						</label>
+						<label>E-mail:
+							<input type="email" name="mail" size="50" />
+						</label>
+					</p>
+					<p>
+						<label>Teléfono:
+							<input type="tel" name="telefono" size="15" maxlength="12"/>
+						</label>
+						<label>Url:
+							<input type="url" name="url" size="75"/>
+						</label>
+					</p>
+					<p>
+						<label>Fecha:
+							<input type="date" name="fecha" size="15" maxlength="10"/>
+						</label>
+						<label>Hora:
+							<input type="time" name="hora" size="7" maxlength="5"/>
+						</label>
+						<label>Fecha y hora:
+							<input type="datetime" name="fechahora" size="30"/>
+						</label>
+					</p>
+					<p>
+						<label>Mes:
+							<input type="month" name="mes" size="22" maxlength="18"/>
+						</label>
+						<label>Semana:
+							<input type="week" name="semana"/>
+						</label>
+					</p>
+					<p>
+						<label>Número:
+							<input type="number" name="numero" min="0" max="30" step="5" />
+						</label>
+						<label>Rango:
+							<input type="range" name="rango" min="-30" max="30" step="3"/>
+						</label>
+					</p>
+					<p>
+						<label>Búsqueda:
+							<input type="search" name="busqueda"/>
+						</label>
+						<label>Color:
+							<input type="color" name="color"/>
+						</label>
+					</p>
+					<!--El type "file" necesita el método POST (que es el que está puesto en en el atributo method de form en este 
+					formulario)-->
+					<p>
+						<label>CV:
+							<input type="file" name="cv"/>
+						</label>
+						<label>Fotografía:
+							<input type="file" name="color" accept="application/pdf"/>
+						</label>
+					</p>
+					<p>
+						<label>Otra documentación:
+							<input type="file" name="documentacion[]" multiple/>
+						</label>
+					</p>
+					<p>
+						<input type="submit" name="enviar" value="Enviar"/>
+						<input type="reset" name="restablecer" value="Restablecer"/>
+					</p>
+				</form>
+			</article>
+		</main>
+	</body>
+</html>

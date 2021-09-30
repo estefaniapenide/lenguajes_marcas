@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE agenda [
+<!ELEMENT agenda (persona)+>
+<!ELEMENT persona (nombre?,telefono+)>
+<!ATTLIST persona
+                     codigo NMTOKEN #REQUIRED
+                     tipo (trabajo | gimnasio | vecino) "trabajo">
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>
+]>
+<agenda>
+<persona codigo="1" tipo="trabajo">
+<telefono>986456789</telefono>
+<telefono>986574534</telefono>
+</persona>
+<persona codigo="2" tipo="gimnasio">
+<nombre>María</nombre>
+<telefono>986452312</telefono>
+</persona>
+<persona codigo="2" tipo="vecino">
+<nombre>Juan</nombre>
+<telefono>435678</telefono>
+<telefono>2345678</telefono>
+</persona>
+</agenda>

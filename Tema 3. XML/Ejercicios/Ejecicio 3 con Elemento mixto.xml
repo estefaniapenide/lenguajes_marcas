@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE programas [
+<!ELEMENT programas (periodo)+>
+<!ELEMENT periodo (#PCDATA|programa)*>
+<!ELEMENT programa (nombre,licencia+,SO+)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT licencia (#PCDATA)>
+<!ELEMENT SO (#PCDATA)>
+  ]>
+<!--Escribo UTF en mayúsculas-->
+<programas>
+	<!--Añado un guion bajo a la etiqueta del periodo de tiempo ya que los elementos tienen que empear por un caracter alfabetico o por _-->
+	<periodo>
+		<![CDATA[Programas con fecha > 2008 y < 2013]]>
+		<!--Escribo el contenido de empleando CDATA debido a los signos > y < -->
+		<!--Abro y cierro cada etiqueta programa y convierto los atributos en etiquetas-->
+		<programa>
+			<nombre>Notepad++</nombre>
+			<licencia>LGPL</licencia>
+			<SO>Windows</SO>
+		</programa>
+		<programa>
+			<nombre>XML Copy Editor</nombre>
+			<licencia>GPL</licencia>
+			<SO>Windows</SO>
+			<SO>Linux</SO>
+		</programa>
+	</periodo>
+</programas>
+

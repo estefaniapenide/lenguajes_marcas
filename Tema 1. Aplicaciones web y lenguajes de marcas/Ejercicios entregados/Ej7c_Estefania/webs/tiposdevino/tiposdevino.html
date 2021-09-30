@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Listas anidadas</title>
+	</head>
+	<body>
+		<!--Enlace ruta relativa.Enlace origen. Enlace externo, local. Destino ubicado en niveles superiores. Vuelve a la web de HTML BASICO-->
+		<a href="../../HTML_BASICO.html">Volver a la página de inicio</a>
+		<h2>Tipos de vino</h2>
+		<ul>
+			<li><b>Clasificación por color</b>
+				<!--Enlace destino.Enlace externo, local-->
+				<a id="listasordenadas"></a>
+				<!--Enlace externo, local. Enlace ruta relativa. Enlace origen cuyo destino está ubicado en la páigana HTML BASICO al inicio del aparatado listas ordenadas-->
+				<a href="../../HTML_BASICO.html#listasordenadas">Volver a la página de inicio en listas ordenadas</a>
+				<ol>
+					<li>
+						<dl>
+							<dt><b>Tintos</b></dt>
+							<dd>Elaborado con uvas tintas, fermentando el mosto de la uva junto con la piel.
+							<br>Tiene una gama de colores entre rojo rubí y el morado.</dd>
+						</dl>
+					</li>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagenes/uvas_tintas.jpg" width="275" height="183" alt="Uvas tintas"/>
+					        
+					<li>
+						<dl>
+							<dt><b>Blancos</b></dt>
+							<dd>Elaborado en su mayoría con uvas blancas.
+							<br>Tiene una gama de colores entre rojo rubí y el morado.</dd>
+						</dl>
+					</li>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="imagenes/uvas_blancas.jpg" width=20% alt="Uvas blancas"/>
+
+					<li>
+						<dl>
+							<dt><b>Rosados</b></dt>
+							<dd>Elaborado con una mezcla de 	uvas tintas y blancas.
+							<br>Tiene una gama de colores entre amarillo pálido y caoba.</dd>
+						</dl>
+					</li>
+					<img src="imagenes/uvas_tintas.jpg" alt="Uvas tintas"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<img src="imagenes/uvas_blancas.jpg" alt="Uvas blancas"/>
+				</ol>
+			</li>
+				
+			<li><b>Clasificación por edad</b>
+				<!--Enlace destino. Viniendo de la web principal para ver el ejemplo de listas anidadas-->
+				<a id="listasanidadas"></a>
+				<!--Enlace externo, local. Enlace ruta relativa. Enlace origen cuyo destino está ubicado en la páigana HTML BASICO al final del aparatado listas-->
+				<a href="../../HTML_BASICO.html#vueltaanidadas">Volver a la página de inicio al final de listas</a>
+				<ol>
+					<li>
+						<dl>
+							<dt><b>Vino Joven</b></dt>
+							<dd>Con muy poca crianza en madera, menos de 6 meses.</dd>
+						</dl>
+					</li>
+					
+					
+					<li>
+						<dl>
+							<dt><b>Con crianza</b></dt>
+							<dd>Crianza en madera de al menos 6 meses y crianza en botella</dd>
+						</dl>
+							<ul>
+								<li>
+									<dl>
+										<dt><b>Crianza</b></dt>
+										<dd>Crianza en madera de al menos 6 meses y crianza en botella de 2 años.</dd>
+									</dl>
+								</li>
+								
+								
+								<li>
+									<dl>
+										<dt><b>Reserva</b></dt>
+										<dd>Crianza en madera de al menos 1 año y crianza en botella de 3 años.</dd>
+									</dl>
+								</li>
+								
+								
+								<li>
+									<dl>
+										<dt><b>Gran Reserva</b></dt>
+										<dd>Crianza en madera al menos 2 años y crianza en botella de 5 años.</dd>
+									</dl>
+								</li>
+							</ul>
+						</dl>
+					</li>
+				</ol>
+			</li>
+		</ul>
+	</body>
+</html>

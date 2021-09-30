@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE cursos SYSTEM "DTD_12.dtd">
+<cursos>
+<empresa>Profesional Training, S.A.</empresa>
+    <curso codigo="C89" nombre="Java" fechaInicio="7/10-2019" nivel="avanzado"/>
+    <curso codigo="C90" nombre="PHP" fechaInicio="6/11-2019"/>
+    <curso codigo="C100" nombre="XML" fechaInicio="30/03/2020" nivel="medio"/>
+    <alumnos>
+        <alumno curso="C90">
+        <nombre>Isabel</nombre>
+        <apellidos>Díaz Ayuso</apellidos>
+        </alumno>
+        <alumno curso="C89 C90 C100">
+        <nombre>Rocío</nombre>
+        <apellidos>Monasterio San Martín</apellidos>
+        </alumno>
+        <alumno>
+        <nombre>Pablo</nombre>
+        <apellidos>Iglesias Turrión</apellidos>
+        <telefono>689754222</telefono>
+        </alumno>
+        <alumno curso="C100 C89">
+        <nombre>Mónica</nombre>
+        <apellidos>García Gómez</apellidos>
+        <telefono>689754222</telefono>
+        </alumno>
+    </alumnos>
+</cursos>

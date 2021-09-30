@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE movimientos SYSTEM "DTD_Caso4.dtd">
+<movimientos>
+	<ventamonitor>200</ventamonitor>
+	<ventapc>800</ventapc>
+	<ventamonitor>800</ventamonitor>
+	<ventamonitor>300</ventamonitor>
+</movimientos>

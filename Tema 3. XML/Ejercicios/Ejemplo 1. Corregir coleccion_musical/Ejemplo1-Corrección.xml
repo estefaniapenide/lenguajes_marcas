@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--Faltaban los ? al principio y al final, UTF-8 debe estar en mayúsculas, añado standalone aunque por defect ya tenía yes sin necesidad de espacificarlo-->
+<coleccion_musical>
+	<!--Elimino el espacio de la etiqueta raíz y también le quito la tilde(aunque eso no sería necesario)-->
+	<artista nome="Queen">
+		<!--Añado las comillas en el atributo-->
+		<album nome="A Night at the Opera">
+			<!--Añado las comillas en el atributo-->
+			<!--Cada canción debería tener su propia etiqueta-->
+			<cancion>Bohemian Rhapsody</cancion>
+			<cancion>'39</cancion>
+		</album>
+		<!--Añado la barra de cierre en la etiqueta album-->
+	</artista>
+	<artista nome="R.E.M.">
+		<!--Añado las comillas en el atributo-->
+		<album nome="Life's Rich Pageant">
+			<!--Corrijo el uso de las comillas en el atributo-->
+			<!--Cada canción debería tener su propia etiqueta-->
+			<cancion>Superman</cancion>
+			<cncion>These days</cancion>
+		</album>
+	</artista>
+</coleccion_musical>
+<!--Elimino el espacio de la etiqueta raíz de cierre y también le quito la tilde ya que lo hice en la de apertura-->

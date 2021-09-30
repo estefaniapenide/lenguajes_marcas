@@ -1,0 +1,13 @@
+<!ELEMENT reservas (reserva+)>
+<!ATTLIST reservas año NMTOKEN #REQUIRED>
+<!ELEMENT reserva (fecha,evento,(clienteEmpresa|clientePersonal))>
+<!ATTLIST reserva 
+                              local (Polideportivo|Localsocial) #REQUIRED
+                              bonificacion CDATA #IMPLIED>
+<!ELEMENT fecha EMPTY>
+<!ATTLIST fecha mes CDATA #REQUIRED
+                              dia NMTOKEN #REQUIRED
+                              horario (mañana|tarde|dia) "tarde">
+<!ELEMENT evento (#PCDATA)>
+<!ELEMENT clienteEmpresa (#PCDATA)>
+<!ELEMENT clientePersonal (#PCDATA)>

@@ -1,0 +1,104 @@
+/* ------ aplicar para toda la página web el tipo fuente Arial, Helvetica, sans-serif, color texto #002D4B, tamaño texto 62.5%, imagen d fondo "bg_body.png" ---*/
+body{
+	font-family: Arial,Helvetica,sans-serif;
+	color:#002D4B;
+	font-size:62.5%;
+	background-color:lightblue;
+	background-image:url("../images/bg_body.png");
+	background-repeat:repeat-x;
+}
+
+/* ------ regla contenedor principal: establecer ancho a 740px, sin margen sup e inf y q calcule el navegador el dcho e izq, añadir relleno y un borde contínuo
+d cierto grosor y color blanco. La imagen de fondo es "bg_banner.jpg"----------------*/
+.wrapper{
+	width:740px;
+	margin:auto;
+	padding:10px;
+	border:6px solid white;
+	background-image: url("../images/bg_banner.jpg");
+	background-repeat:no-repeat;
+}
+/* ------ regla para el encabezado principal q está dentro del contenedor principal: tamaño, color #FF6600, fuente "Arial Black", Arial, Helvetica, sans-serif ---*/
+.wrapper header{
+	font-size:5.5em;
+	color:#FF6600;
+	font-family: "Arial Black",Arial,Helvetica,sans-serif;
+}
+
+/* ------ regla para los strong d encabezado principal: tamaño a 150px, margen derecho en em (ojo con su valor, puede ser negativo), 
+interlineado d 1 em, color blanco, --------------*/
+header strong{
+	font-size:150px;
+	margin-right:-2em;
+	color:white;
+	line-height: 1em;
+}
+
+/* ------ regla para el h2 dentro d contenedor principal: borde inferior contínuo de poco grosor y color #002D4B, margen superior, sobre 20px, 
+tipo fuente "Hoefler Text", Garamond, serif, Times, en negrita, tamaño grande, entre 3 y 4 em----*/
+h2{
+	border-bottom:solid thin #002D4B;
+	margin-top:5px;
+	font-family: "Hoefler Text", Garamond, serif, Times;
+	font-style: bold;
+	font-size:4.5em;
+}
+
+/* ------ regla para el h3 dentro d contenedor principal: color #F60, tamaño casi 2 em, negrita, convertir a mayúsculas, definir márgenes verticales ----*/
+h3{
+	color:#F60;
+	font-size:1.9em;
+	font-style: bold;
+	text-transform:uppercase;
+	margin-right:4px;
+	margin-left:4px;
+}
+
+/* ------ regla para los párrafos que están dentro d contenedor principal: tamaño, interlineado, márgenes y alineación a ambos lados. 
+El margen izq es grande (150 px) -*/
+main p{
+	font-size:1.5em;
+	line-height:1.5em;
+	margin-left:150px;
+	text-align:justify;
+}
+
+/* ------ regla para la primera línea de los párrafos que están dentro d contenedor principal: color#999, negrita-*/
+
+main p.buyline{
+	color:#999;
+	font-style: bold;
+}
+
+/* ------ regla para la clase q contiene un conjunto de enlaces con los titulos d obras: redimensionado a 225px, color de fondo #F5EFFB, 
+márgenes inferior e izq (con mayor valor el izq q el inferior),  relleno, y debe aparecer d forma automática e independiente del resto d contenidos a la derecha ----*/
+.resources{
+	display:block;
+	width:225px;
+	background-color:#F5EFFB;
+	margin-bottom: 10px;
+	margin-left:15px;
+	padding:10px;
+	float:right;
+}
+
+/* ------ regla para el título d la clase anterior: sin margen superior, color: #002D4B--*/
+.resources h3{
+	margin-top:0;
+	color:color: #002D4B;
+}
+
+/* ------ regla para los elementos de la lista de la clase anteror de los títulos d las obras: tamaño 1.5em, margen inferior, color: #207EBF--*/
+.resources li{
+	font-size:1.5em;
+	color:#207EBF;
+}
+
+/* ------ regla para la clase q contiene la fecha d artículo: color:#999999, tamaño 1.6em, margen superior< margen inferior < margen izq, y margen dcho 0--*/
+
+/* ------ regla para el strong d la clase q contiene la fecha d artículo: color:#207EBF, texto en mayúsculas, margen izq--*/
+
+/*--- regla para la clase del footer del contenedor ppal: márgen, relleno y borde superior -color #FFF-, definir alineación y 
+revisar si es necesario eliminar algún margen --*/ 
+
+/* ------ regla para q la dirección d correo electrónico no se muestre en un nuevo bloque -*/

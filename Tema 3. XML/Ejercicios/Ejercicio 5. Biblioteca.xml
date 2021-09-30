@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+	<libro ISBN="23543">
+		<Titulo>El señor de los anillos</Titulo>
+		<Año_publicacion>1956</Año_publicacion>
+		<Autor>JRR Tolkien</Autor>
+		<Descripcion idioma="Inglés">Tierra media, hobbits, elfos, enannos</Descripcion>
+	</libro>
+		<libro ISBN="1234">
+		<Titulo>Orgullo y prejuicio</Titulo>
+		<Año_publicacion>18..</Año_publicacion>
+		<Autor>Jane Austen</Autor>
+		<Descripcion idioma="Inglés">Gente escanadalizándose porque otra gente no se casa</Descripcion>
+	</libro>
+		<libro ISBN="45678">
+		<Titulo>Harry Potter</Titulo>
+		<Año_publicacion>1997</Año_publicacion>
+		<Autor>JK Rowling</Autor>
+		<Descripcion idioma="Inglés">Niños magos en el colegio</Descripcion>
+	</libro>
+		<libro ISBN="34566">
+		<Titulo>bla bla bla</Titulo>
+		<Año_publicacion>2034</Año_publicacion>
+		<Autor>Yo</Autor>
+		<Descripcion idioma="Inglés"></Descripcion>
+	</libro>
+</libros>

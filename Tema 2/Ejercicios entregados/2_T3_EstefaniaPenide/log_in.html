@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Log in</title>
+		<link rel="stylesheet" type="text/css" href="estilos/login.css"/>
+	</head>
+	<body>
+		<div id="wrapper1">
+		<header>
+			<a class="inicio webprincipal" href="libromania.html">Volver a la página principal</a>
+		</header>
+		<main>
+			<article>
+				<header><h1>Log in Libromanía</h1></header>
+				<form action="ruta/recurso.php" method="post" enctype="multipart/form-data">
+					<!--Uso el tipo email para que el navegador avise si se mete el valor equivocado en el campo-->
+					<input type="email"  id="mail" name="mail" size="50" placeholder="Email" required/><br>
+					<!--Uso el tipo password y el número de caracteres que se pueden introducir además de definir la longitud del cuadro de texto mostrado)-->
+					<input type="password"  id="contrasena" name="contrasena" size="50" maxlength="20" placeholder="Contraseña" required/><br><br>
+					<button type="submit">Acceder</button>
+				</form>		
+			</article>
+		</main>
+		<aside>
+				<p>¿Aún no tienes cuenta?</p>
+				<a href="formulario.html"><button type="button">Crea un nuevo perfil</button></a>
+		</aside>
+		<!--Creo un footer para idicar la web a la que pertenece este formulario-->
+		<footer>
+			<address>Limbromanía&copy;</address>
+		</footer>
+		</div>
+	</body>
+</html>

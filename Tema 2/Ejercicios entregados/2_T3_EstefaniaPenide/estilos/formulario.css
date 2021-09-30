@@ -1,0 +1,82 @@
+body{
+	background-color: #766019;
+	padding:0;
+	margin:0;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:white;
+}
+#wrapper1{
+	width:1400px;
+	margin-top:0;
+	margin:auto;
+	border: 3px solid white;
+	padding:10px;
+}
+.cabecera{
+	margin:0;
+	padding:0;
+	height:400px;
+	background-image:url("../imagen/biblioteca.jpg");
+	clear:both;
+}
+h1{
+	position:relative;
+	top:50%;
+	left:5%;
+	color:white;
+	font-size: 6em;
+	font-style: bold;
+}
+a.webprincipal{
+	position:relative;
+	top:5%;
+	left:85%;
+	background-color:#b33e64;
+	font-size:0.7em;
+	padding:0.3em;
+	border-radius:20%;
+	color:white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+fieldset{
+	margin:15px;
+}
+input, option, textarea, select,button{
+	background-color:#ecea9b;
+}
+input[type="file"] {
+    color: transparent;
+}
+optgroup{
+	background-color:#c0b014;
+}
+.fotos{
+	margin:5%;
+}
+.fotos label{
+	float:left;
+	margin:10px;
+}
+img{
+	border:3px ridge brown;
+}
+.fotos img{
+	padding:0;
+	width:320px;
+	height:200px;
+}
+.foto{
+	width:320px;
+	height:200px;
+	border:3px ridge brown;
+}
+#check{
+	vertical-align: bottom;
+}
+select.letra{
+	height:20px;
+}
+footer,aside{
+	clear:both;
+}

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<coches xsi:noNamespaceSchemaLocation="RestriccionEnumeracion.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<coche>BMW</coche>
+<otroCoche>Audi</otroCoche>
+</coches>

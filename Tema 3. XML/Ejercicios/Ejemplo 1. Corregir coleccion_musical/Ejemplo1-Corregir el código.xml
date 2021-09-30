@@ -1,0 +1,16 @@
+<xml version="1.0" encoding="utf-8">
+<!--Correige los errores de los nombres y valores-->
+<colección musical>
+	<artista nome=Queen>
+		<album nome=A Night at the Opera>
+			<Bohemian Rhapsody>
+			<'39>
+		<album>
+	</artista>
+	<artista nome=R.E.M.>
+		<album nome='Life's Rich Pageant'>
+			<Superman>
+			<These days>
+		</album>
+	</artista>
+</colección musical>

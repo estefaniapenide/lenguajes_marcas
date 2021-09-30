@@ -1,0 +1,5 @@
+	<!ELEMENT movimientos ((ventapc|ventamonitor)+|(comprapc+,compramonitor+))>
+	<!ELEMENT ventamonitor (#PCDATA)>
+	<!ELEMENT ventapc (#PCDATA)>
+	<!ELEMENT compramonitor (#PCDATA)>
+	<!ELEMENT comprapc (#PCDATA)>

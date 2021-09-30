@@ -1,0 +1,14 @@
+<!ELEMENT cursos (empresa,curso*,alumnos)>
+<!ELEMENT empresa (#PCDATA)>
+<!ELEMENT curso EMPTY>
+<!ATTLIS curso 
+                            codigo ID #REQUIRED
+                             nombre CDATA #REQUIRED
+                             fechaInicio CDATA #REQUIRED
+                             nivel (bajo|medio|avanzado) "bajo">
+<!ELEMENT alumnos(alumno+)>
+<!ELEMENT alumno (nombre,apellidos,telefono?)>
+<!ATTLIST alumno cursos IDREFS #IMPLIED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellidos (#PCDATA)>
+<!ELEMENT telefono (#PCDATA)>

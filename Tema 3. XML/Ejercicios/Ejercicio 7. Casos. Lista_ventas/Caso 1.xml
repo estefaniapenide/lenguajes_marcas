@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE listaventas[
+	<!ELEMENT listaventas (ventapc+,ventamonitor+)>
+	<!ELEMENT ventapc (#PCDATA)>
+	<!ELEMENT ventamonitor (#PCDATA)>
+]>
+<listaventas>
+	<ventapc>100</ventapc>
+	<ventapc>300</ventapc>
+	<ventapc>400</ventapc>
+	<ventamonitor>200</ventamonitor>
+	<ventamonitor>400</ventamonitor>
+	<ventamonitor>500</ventamonitor>
+</listaventas>

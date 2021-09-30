@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Ejecicio especificidad</title>
+		<style type="text/css">
+			#id1, #id2, #id3 {color:red;}
+			ul li.important {color:green;}
+			ul li {color:blue;}
+			li.important {color:yellow;}
+			li {color:purple;}									
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Especificidad</h1>
+		</header>
+		<main>
+			<ul>
+				<li>Lista con selectores redundantes</li>
+				<li class="important">Con clase</li>
+				<li id="id1">Con id id1</li>
+				<li id="id2" class="important">Con id id2 y clase important</li>
+				<li id="id3" class="important" style="color:pink">Con id id3, clase important y atributo style</li>
+			</ul>
+		</main>
+	</body>
+</html>

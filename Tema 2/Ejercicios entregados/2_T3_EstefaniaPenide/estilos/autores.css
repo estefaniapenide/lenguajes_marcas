@@ -1,0 +1,95 @@
+body{
+	background-image:url("../imagen/ligthmaroon.png");
+	background-repeat:repeat;
+	padding:0;
+	margin:0;
+}
+#wrapper1{
+	width:1400px;
+	margin-top:0;
+	margin:auto;
+	border: 3px solid white;
+}
+.cabecera{
+	margin:0;
+	padding:0;
+	height:400px;
+	background-image:url("../imagen/autores.jpg");
+	clear:both;
+}
+main{
+	margin-bottom:15px;
+}
+h1{
+	position:relative;
+	top:50%;
+	left:5%;
+	color:white;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 6em;
+	font-style: bold;
+}
+a.webprincipal{
+	position:relative;
+	top:5%;
+	left:85%;
+}
+a.inicio{
+	background-color:#195834;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:0.7em;
+	padding:0.3em;
+	border-radius:20%;
+	color:white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+a.inicio:hover,a.webprincipal:hover{
+	background-color: #88ce7a;
+}
+a.inicio:active,a.webprincipal:active{
+	border: 2px solid black;
+	background-color:black;
+}
+article{
+	float:left;
+}
+h3{
+	color:#bbb42f;
+	font-size:3em;
+	text-align: center;
+	font-style: oblique;
+	text-transform: uppercase;
+	border: 3px ridge brown;
+}
+figure{
+	width:250;
+	float:left;
+	margin:15px;
+	padding:15px;
+	background-color:#0c4f27;
+	border: 10px ridge brown;
+}
+figcaption{
+	width:100%;
+	color:white;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1.5em;
+	text-align: center;
+
+}
+img{
+	margin:auto 0;
+	height:300px;
+}
+.enlaces{
+	clear:both;
+	text-align: right;
+	margin-right:2%;
+}
+footer,aside{
+	clear:both;
+	color:white;
+	font-style: bold;
+	margin:15px;
+}

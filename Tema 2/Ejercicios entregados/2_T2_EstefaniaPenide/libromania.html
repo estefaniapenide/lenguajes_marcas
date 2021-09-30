@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Creo esta web para ponerle un punto de origen al formulario solicitado en la tarea-->
+<!--He incoorporado unas cuantas etiqutas vsitas hasta ahora pero no todas. Así, he empleado una barra de navegación, enlaces, listas no ordenadas, tablas, imágenes, video, audio y botones vistos en la última parte del tema. La he estructurado en un header, un main, un aside y un footer. En el header, además del título se ha  introducido una barra de navegación donde están los enlaces para navegar por la propia página y el botón que es un enlace que lleva a la página del formmulario. A su vez el main cuenta con dos secciones. La primera sección va sobre libros y autores premiados y la segunda tiene que ver con las contribuciones a la web por parte de la comunidad. Ambas las considero igual de relevantes por eso están en el main. La primera sección está dividida en tres artículos, acada uno hace referencia a un premio, y la segunda también está dividida en tres, donde se organizan distintos tipos de contribuciones que se pueden hacer a la web. He introducido un aside donde hay una imagen y un audio que no tienen más funcionalidad que aporatar algo de ornamentación a la web y también hay una aclaración ya que pretendo añadirle más cosas a esta paágina para que sea más completa. Finalmente un footer indicando en qué pagina estamos a modo de firma.-->
+	<head>
+		<meta charset="UTF-8">
+		<title>Libromanía</title>
+	</head>
+	<body>
+		<header>
+			<a id="inicio"></a>
+			<h1>Libromanía</h1>
+			<h4>La web de los adictos a los libros</h4><br>
+			<nav>
+				<a href="formulario.html"><button type="button">Crea tu perfil</button></a>
+				<button type="button">Log in</button>
+				<ul>
+					<li><a href="#premios">Premios de literatura</a>
+						<ul>
+							<li><a href="#nadal">Libros galardonados con el Premio Nadal</a></li>
+							<li><a href="#nobel">Premios Nobel de Literatura</a></li>
+							<li><a href="#cervantes">Premios Miguel de Cervantes</a></li>	
+						</ul>
+					</li>
+					<li><a href="#recomendaciones">Recomendaciones de la comunidad</a>
+						<ul>
+							<li><a href="#mislistas">Mis listas</a></li>
+							<li><a href="#listas">Listas creadas por otros usuarios</a></li>
+							<li><a href="#resenas">Reseñas</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<video src="video/library.mp4" autoplay loop></video>
+		</header>
+		<main>
+			<section>
+				<header>
+					<a id="premios"></a>
+					<h2>Premios de literatura</h2>
+				</header>
+				<article>
+					<header>
+						<a id="nadal"></a>
+						<h3>Libros galardonadodos con el Premio Nadal</h3>
+						<a href="#inicio">Volver al inicio</a>
+					</header>
+					<ul>
+						<li>2021, Najat el Hachmi, <strong>El lunes nos querrán</strong></li>
+						<li>2020, Ana Merino, <strong>El mapa de los afectos</strong></li>
+						<li>2019, Guillermo Martínez, <strong>Los crímenes de Aliciaa​</strong></li>
+						<li>2018, Alejandro Palomas, <strong>Un amor</strong></li>
+						<li>2017, Care Santos, <strong>Media vida</strong></li>
+						<li>2016, Víctor del Árbol, <strong>La víspera de casi todo</strong></li>
+						<li>2015, José C. Vales, <strong>Cabaret Biarritz</strong></li>
+						<li>2014, Carmen Amoraga, <strong>La vida era eso</strong></li>
+						<li>2013, Sergio Vila-Sanjuán, <strong>Estaba en el aire</strong></li>
+						<li>2012, Álvaro Pombo, <strong>El temblor del héroe</strong></li>
+						<li>2011, Alicia Giménez, <strong>Bartlett</strong></li>
+						<li>2010, Clara Sánchez, <strong>Lo que esconde tu nombre</strong></li>
+						<li>2009, Maruja Torres, <strong>Esperadme en el cielo</strong></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<a id="nobel"></a>
+						<h3>Premios Nobel de Literatura</h3>
+						<a href="#inicio">Volver al inicio</a>
+					</header>
+					<table border="1" rules="all">
+						<tr>
+							<td>2020: Louise Glück<br><img src="imagen/louise.jpg" alt="Louise Glück"/></td>
+							<td>2019: Peter Handke<br><img src="imagen/peter.jpg" alt="Peter Handke"/></td>
+							<td>2018: Olga Tokarczuk<br><img src="imagen/olga.jpg" alt="Olga Tokarczuk"/></td>
+							<td>2017: Kazuo Ishiguro<br><img src="imagen/kazuo.jpg" alt="Kazuo Ishiguro"/></td>
+						</tr>
+						<tr>
+							<td>2016: Bob Dylan<br><img src="imagen/bob.jpg" alt="Bob Dylan"/></td>
+							<td>2015: Svetlana Aleksiévich<br><img src="imagen/svetlana.jpg" alt="Svetlana Aleksiévich"/></td>
+							<td>2014: Patrick Modiano<br><img src="imagen/patrick.jpg" alt="Patrick Modiano"/></td>
+							<td>2013: Alice Munro<br><img src="imagen/alice.jpg" alt="Alice Munro"/></td>
+						</tr>
+						<tr>
+							<td>2012: Mo Yan<br><img src="imagen/mo.jpg" alt="Mo Yan"/></td>
+							<td>2011: Tomas Tranströmer<br><img src="imagen/tomas.jpg" alt="Tomas Tranströmer"/></td>
+							<td>2010: Mario Vargas Llosa<br><img src="imagen/mario.jpg" alt="Mario Vargas Llosa"/></td>
+							<td>2009: Herta Müller<br><img src="imagen/herta.jpg" alt="Herta Müller"/></td>
+						</tr>
+					</table>
+				</article>
+				<article>
+					<header>
+						<a id="cervantes"></a>
+						<h3>Premios Miguel de cervantes</h3>
+						<a href="#inicio">Volver al inicio</a>
+					</header>
+					<table border="1" rules="all">
+						<tr>
+							<td>2020: Francisco Brines<br><img src="imagen/francisco.jpg" alt="Francisco Brines"/></td>
+							<td>2019: Joan Margarit<br><img src="imagen/joan.jpg" alt="Joan Margarit"/></td>
+							<td>2018: Ida Vitale<br><img src="imagen/ida.jpg" alt="Ida Vitale"/></td>
+							<td>2017: Sergio Ramírez<br><img src="imagen/sergio.jpg" alt="Sergio Ramírez"/></td>
+						</tr>
+						<tr>
+							<td>2016: Eduardo Mendoza<br><img src="imagen/eduardo.jpg" alt="Eduardo Mendoza"/></td>
+							<td>2015: Fernando del Paso<br><img src="imagen/fernando.jpg" alt="Fernando del Paso"/></td>
+							<td>2014: Juan Goytisolo<br><img src="imagen/juan.jpg" alt="JUan Goytisolo"/></td>
+							<td>2013: Elena Poniatowska<br><img src="imagen/elena.jpg" alt="</td>
+							<td>2013: Elena Poniatowska"/></td>
+						</tr>
+						<tr>
+							<td>2012: José Manuel Caballero Bonald<br><img src="imagen/jose.jpg" alt="José Manuel Caballero Bonald"/></td>
+							<td>2011: Nicanor Parra<br><img src="imagen/nicanor.jpg" alt="Nicanor Parra"/></td>
+							<td>2010: Ana María Matute<br><img src="imagen/ana.jpg" alt="Ana María Matute"/></td>
+							<td>2009: José Emilio Pacheco<br><img src="imagen/emilio.jpg" alt="José Emilio Pacheco"/></td>
+						</tr>
+					</table>
+				</article>
+			</section>
+			<section>
+				<a id="recomendaciones"></a>
+				<h2>Recomendaciones de la comunidad</h2>
+				<article>
+					<header>
+						<a id="mislistas"></a>
+						<h3>Mis listas</h3>
+						<a href="#inicio">Volver al inicio</a>
+					</header>
+					     Entra en tu perfil para accceder a tus listas creadas<br>
+					     <button type="button">Log in</button>
+				</article>
+				<article>
+					<header>
+						<a id="listas"></a>
+						<h3>Listas creadas por otros usuarios</h3>
+						<a href="#inicio">Volver al inicio</a>
+					</header>
+					<ul>
+						<li>Las mejores novelas históricas, por Paula López<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+						<li>Las mejores autoras contemporáneas, por Andrea García<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+						<li>Las mejores antologías de poesía, por Ignacio González<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+						<li>Mis novelas románticas preferidas, por Laura Rey<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<a id="resenas"></a>
+						<h3>Reseñas</h3>
+						<a href="#inicio">Volver al inicio</a>
+					</header>
+					<ul>
+						<li>"El señor de los anillos", por Juan González<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+						<li>"Cien años de soledad", por Esther García<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+						<li>"El círculo", por Gabriel Pérez<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+						<li>"Nunca me abandones", por Carmen Estéve<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+						<li>"Egghead", por Patricia Vázquez<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+						<li>"Lila, Lila", por Adrián Garrido<br><input type="image" src="imagen/like2.png" width="50"/><input type="image" src="imagen/dislike.png" width="70"/></li>
+					</ul>
+				</article>
+			</section>			
+		</main>
+		<aside>
+			<a href="imagen/books.jpg"><img src="imagen/books.jpg" alt="Libros antiguos"/></a><br>
+			<audio src="audio/piano.mp3" autoplay loop controls></audio><br>
+			Esta web está en proceso de creación. Se irán añadiendo mejoras y más artículos en un futuro próximo.
+		</aside>
+		<footer>
+			<address>Limbromanía&copy;</address>
+		</footer>
+	</body>
+</html>

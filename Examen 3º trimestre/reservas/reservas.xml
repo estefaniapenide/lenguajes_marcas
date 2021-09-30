@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reservas SYSTEM "reservas.dtd">
+<reservas año="2003">
+<reserva local="Polideportivo" bonificacion="30%">
+<fecha mes="Enero" dia="24" horario="dia"/>
+<evento>jksdfjkf</evento>
+<clienteEmpresa>fghfrht</clienteEmpresa>
+</reserva>
+</reservas>
